@@ -1,0 +1,665 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		044CF8A02428CCB4005834F6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 044CF89F2428CCB4005834F6 /* AppDelegate.m */; };
+		044CF8A32428CCB4005834F6 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 044CF8A22428CCB4005834F6 /* SceneDelegate.m */; };
+		044CF8A62428CCB4005834F6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 044CF8A52428CCB4005834F6 /* ViewController.m */; };
+		044CF8A92428CCB4005834F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 044CF8A72428CCB4005834F6 /* Main.storyboard */; };
+		044CF8AB2428CCB4005834F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 044CF8AA2428CCB4005834F6 /* Assets.xcassets */; };
+		044CF8AE2428CCB4005834F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 044CF8AC2428CCB4005834F6 /* LaunchScreen.storyboard */; };
+		044CF8B12428CCB4005834F6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 044CF8B02428CCB4005834F6 /* main.m */; };
+		044CF8BB2428CCB5005834F6 /* UDPSocketDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 044CF8BA2428CCB5005834F6 /* UDPSocketDemoTests.m */; };
+		044CF8C62428CCB5005834F6 /* UDPSocketDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 044CF8C52428CCB5005834F6 /* UDPSocketDemoUITests.m */; };
+		31C4F0A269AA1DA5F97A4804 /* Pods_UDPSocketDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C7E3BFF53F1DC96CBA711A6 /* Pods_UDPSocketDemo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		044CF8B72428CCB5005834F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 044CF8932428CCB4005834F6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 044CF89A2428CCB4005834F6;
+			remoteInfo = UDPSocketDemo;
+		};
+		044CF8C22428CCB5005834F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 044CF8932428CCB4005834F6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 044CF89A2428CCB4005834F6;
+			remoteInfo = UDPSocketDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		044CF89B2428CCB4005834F6 /* UDPSocketDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UDPSocketDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		044CF89E2428CCB4005834F6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		044CF89F2428CCB4005834F6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		044CF8A12428CCB4005834F6 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		044CF8A22428CCB4005834F6 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		044CF8A42428CCB4005834F6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		044CF8A52428CCB4005834F6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		044CF8A82428CCB4005834F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		044CF8AA2428CCB4005834F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		044CF8AD2428CCB4005834F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		044CF8AF2428CCB4005834F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		044CF8B02428CCB4005834F6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		044CF8B62428CCB5005834F6 /* UDPSocketDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UDPSocketDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		044CF8BA2428CCB5005834F6 /* UDPSocketDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UDPSocketDemoTests.m; sourceTree = "<group>"; };
+		044CF8BC2428CCB5005834F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		044CF8C12428CCB5005834F6 /* UDPSocketDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UDPSocketDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		044CF8C52428CCB5005834F6 /* UDPSocketDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UDPSocketDemoUITests.m; sourceTree = "<group>"; };
+		044CF8C72428CCB5005834F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DBE035CC7BC13932BC30E37 /* Pods-UDPSocketDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UDPSocketDemo.release.xcconfig"; path = "Target Support Files/Pods-UDPSocketDemo/Pods-UDPSocketDemo.release.xcconfig"; sourceTree = "<group>"; };
+		65E7ACA67FAECEE77EF6A596 /* Pods-UDPSocketDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UDPSocketDemo.debug.xcconfig"; path = "Target Support Files/Pods-UDPSocketDemo/Pods-UDPSocketDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		7C7E3BFF53F1DC96CBA711A6 /* Pods_UDPSocketDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UDPSocketDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		044CF8982428CCB4005834F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31C4F0A269AA1DA5F97A4804 /* Pods_UDPSocketDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		044CF8B32428CCB5005834F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		044CF8BE2428CCB5005834F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		044CF8922428CCB4005834F6 = {
+			isa = PBXGroup;
+			children = (
+				044CF89D2428CCB4005834F6 /* UDPSocketDemo */,
+				044CF8B92428CCB5005834F6 /* UDPSocketDemoTests */,
+				044CF8C42428CCB5005834F6 /* UDPSocketDemoUITests */,
+				044CF89C2428CCB4005834F6 /* Products */,
+				31763DC86021F77BC1F5D6AA /* Pods */,
+				9ADED6EBE060B1BCCC62B3D3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		044CF89C2428CCB4005834F6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				044CF89B2428CCB4005834F6 /* UDPSocketDemo.app */,
+				044CF8B62428CCB5005834F6 /* UDPSocketDemoTests.xctest */,
+				044CF8C12428CCB5005834F6 /* UDPSocketDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		044CF89D2428CCB4005834F6 /* UDPSocketDemo */ = {
+			isa = PBXGroup;
+			children = (
+				044CF89E2428CCB4005834F6 /* AppDelegate.h */,
+				044CF89F2428CCB4005834F6 /* AppDelegate.m */,
+				044CF8A12428CCB4005834F6 /* SceneDelegate.h */,
+				044CF8A22428CCB4005834F6 /* SceneDelegate.m */,
+				044CF8A42428CCB4005834F6 /* ViewController.h */,
+				044CF8A52428CCB4005834F6 /* ViewController.m */,
+				044CF8A72428CCB4005834F6 /* Main.storyboard */,
+				044CF8AA2428CCB4005834F6 /* Assets.xcassets */,
+				044CF8AC2428CCB4005834F6 /* LaunchScreen.storyboard */,
+				044CF8AF2428CCB4005834F6 /* Info.plist */,
+				044CF8B02428CCB4005834F6 /* main.m */,
+			);
+			path = UDPSocketDemo;
+			sourceTree = "<group>";
+		};
+		044CF8B92428CCB5005834F6 /* UDPSocketDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				044CF8BA2428CCB5005834F6 /* UDPSocketDemoTests.m */,
+				044CF8BC2428CCB5005834F6 /* Info.plist */,
+			);
+			path = UDPSocketDemoTests;
+			sourceTree = "<group>";
+		};
+		044CF8C42428CCB5005834F6 /* UDPSocketDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				044CF8C52428CCB5005834F6 /* UDPSocketDemoUITests.m */,
+				044CF8C72428CCB5005834F6 /* Info.plist */,
+			);
+			path = UDPSocketDemoUITests;
+			sourceTree = "<group>";
+		};
+		31763DC86021F77BC1F5D6AA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				65E7ACA67FAECEE77EF6A596 /* Pods-UDPSocketDemo.debug.xcconfig */,
+				5DBE035CC7BC13932BC30E37 /* Pods-UDPSocketDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9ADED6EBE060B1BCCC62B3D3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7C7E3BFF53F1DC96CBA711A6 /* Pods_UDPSocketDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		044CF89A2428CCB4005834F6 /* UDPSocketDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 044CF8CA2428CCB5005834F6 /* Build configuration list for PBXNativeTarget "UDPSocketDemo" */;
+			buildPhases = (
+				D87B8113D744A2E2659DC94D /* [CP] Check Pods Manifest.lock */,
+				044CF8972428CCB4005834F6 /* Sources */,
+				044CF8982428CCB4005834F6 /* Frameworks */,
+				044CF8992428CCB4005834F6 /* Resources */,
+				186A4EF7F6F3712AC00E24C8 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UDPSocketDemo;
+			productName = UDPSocketDemo;
+			productReference = 044CF89B2428CCB4005834F6 /* UDPSocketDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		044CF8B52428CCB5005834F6 /* UDPSocketDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 044CF8CD2428CCB5005834F6 /* Build configuration list for PBXNativeTarget "UDPSocketDemoTests" */;
+			buildPhases = (
+				044CF8B22428CCB5005834F6 /* Sources */,
+				044CF8B32428CCB5005834F6 /* Frameworks */,
+				044CF8B42428CCB5005834F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				044CF8B82428CCB5005834F6 /* PBXTargetDependency */,
+			);
+			name = UDPSocketDemoTests;
+			productName = UDPSocketDemoTests;
+			productReference = 044CF8B62428CCB5005834F6 /* UDPSocketDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		044CF8C02428CCB5005834F6 /* UDPSocketDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 044CF8D02428CCB5005834F6 /* Build configuration list for PBXNativeTarget "UDPSocketDemoUITests" */;
+			buildPhases = (
+				044CF8BD2428CCB5005834F6 /* Sources */,
+				044CF8BE2428CCB5005834F6 /* Frameworks */,
+				044CF8BF2428CCB5005834F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				044CF8C32428CCB5005834F6 /* PBXTargetDependency */,
+			);
+			name = UDPSocketDemoUITests;
+			productName = UDPSocketDemoUITests;
+			productReference = 044CF8C12428CCB5005834F6 /* UDPSocketDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		044CF8932428CCB4005834F6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = TLLTD;
+				TargetAttributes = {
+					044CF89A2428CCB4005834F6 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					044CF8B52428CCB5005834F6 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 044CF89A2428CCB4005834F6;
+					};
+					044CF8C02428CCB5005834F6 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 044CF89A2428CCB4005834F6;
+					};
+				};
+			};
+			buildConfigurationList = 044CF8962428CCB4005834F6 /* Build configuration list for PBXProject "UDPSocketDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 044CF8922428CCB4005834F6;
+			productRefGroup = 044CF89C2428CCB4005834F6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				044CF89A2428CCB4005834F6 /* UDPSocketDemo */,
+				044CF8B52428CCB5005834F6 /* UDPSocketDemoTests */,
+				044CF8C02428CCB5005834F6 /* UDPSocketDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		044CF8992428CCB4005834F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				044CF8AE2428CCB4005834F6 /* LaunchScreen.storyboard in Resources */,
+				044CF8AB2428CCB4005834F6 /* Assets.xcassets in Resources */,
+				044CF8A92428CCB4005834F6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		044CF8B42428CCB5005834F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		044CF8BF2428CCB5005834F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		186A4EF7F6F3712AC00E24C8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UDPSocketDemo/Pods-UDPSocketDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaAsyncSocket.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UDPSocketDemo/Pods-UDPSocketDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D87B8113D744A2E2659DC94D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UDPSocketDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		044CF8972428CCB4005834F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				044CF8A62428CCB4005834F6 /* ViewController.m in Sources */,
+				044CF8A02428CCB4005834F6 /* AppDelegate.m in Sources */,
+				044CF8B12428CCB4005834F6 /* main.m in Sources */,
+				044CF8A32428CCB4005834F6 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		044CF8B22428CCB5005834F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				044CF8BB2428CCB5005834F6 /* UDPSocketDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		044CF8BD2428CCB5005834F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				044CF8C62428CCB5005834F6 /* UDPSocketDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		044CF8B82428CCB5005834F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 044CF89A2428CCB4005834F6 /* UDPSocketDemo */;
+			targetProxy = 044CF8B72428CCB5005834F6 /* PBXContainerItemProxy */;
+		};
+		044CF8C32428CCB5005834F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 044CF89A2428CCB4005834F6 /* UDPSocketDemo */;
+			targetProxy = 044CF8C22428CCB5005834F6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		044CF8A72428CCB4005834F6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				044CF8A82428CCB4005834F6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		044CF8AC2428CCB4005834F6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				044CF8AD2428CCB4005834F6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		044CF8C82428CCB5005834F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		044CF8C92428CCB5005834F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		044CF8CB2428CCB5005834F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65E7ACA67FAECEE77EF6A596 /* Pods-UDPSocketDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LPF3349M6Q;
+				INFOPLIST_FILE = UDPSocketDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TLTech.UDPSocketDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		044CF8CC2428CCB5005834F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DBE035CC7BC13932BC30E37 /* Pods-UDPSocketDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LPF3349M6Q;
+				INFOPLIST_FILE = UDPSocketDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TLTech.UDPSocketDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		044CF8CE2428CCB5005834F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LPF3349M6Q;
+				INFOPLIST_FILE = UDPSocketDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TLTech.UDPSocketDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UDPSocketDemo.app/UDPSocketDemo";
+			};
+			name = Debug;
+		};
+		044CF8CF2428CCB5005834F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LPF3349M6Q;
+				INFOPLIST_FILE = UDPSocketDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TLTech.UDPSocketDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UDPSocketDemo.app/UDPSocketDemo";
+			};
+			name = Release;
+		};
+		044CF8D12428CCB5005834F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LPF3349M6Q;
+				INFOPLIST_FILE = UDPSocketDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TLTech.UDPSocketDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = UDPSocketDemo;
+			};
+			name = Debug;
+		};
+		044CF8D22428CCB5005834F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LPF3349M6Q;
+				INFOPLIST_FILE = UDPSocketDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TLTech.UDPSocketDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = UDPSocketDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		044CF8962428CCB4005834F6 /* Build configuration list for PBXProject "UDPSocketDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				044CF8C82428CCB5005834F6 /* Debug */,
+				044CF8C92428CCB5005834F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		044CF8CA2428CCB5005834F6 /* Build configuration list for PBXNativeTarget "UDPSocketDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				044CF8CB2428CCB5005834F6 /* Debug */,
+				044CF8CC2428CCB5005834F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		044CF8CD2428CCB5005834F6 /* Build configuration list for PBXNativeTarget "UDPSocketDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				044CF8CE2428CCB5005834F6 /* Debug */,
+				044CF8CF2428CCB5005834F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		044CF8D02428CCB5005834F6 /* Build configuration list for PBXNativeTarget "UDPSocketDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				044CF8D12428CCB5005834F6 /* Debug */,
+				044CF8D22428CCB5005834F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 044CF8932428CCB4005834F6 /* Project object */;
+}

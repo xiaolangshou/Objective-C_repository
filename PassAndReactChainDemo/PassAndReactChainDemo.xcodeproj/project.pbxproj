@@ -1,0 +1,602 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF2908AD2402831F00EB7C05 /* CyanView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2908AC2402831F00EB7C05 /* CyanView.m */; };
+		CF2908B024028D3500EB7C05 /* YellowView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2908AF24028D3500EB7C05 /* YellowView.m */; };
+		CF58813424011E7A00F7BBCA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF58813324011E7A00F7BBCA /* AppDelegate.m */; };
+		CF58813724011E7A00F7BBCA /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF58813624011E7A00F7BBCA /* SceneDelegate.m */; };
+		CF58813A24011E7A00F7BBCA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF58813924011E7A00F7BBCA /* ViewController.m */; };
+		CF58813D24011E7A00F7BBCA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF58813B24011E7A00F7BBCA /* Main.storyboard */; };
+		CF58813F24011E7D00F7BBCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF58813E24011E7D00F7BBCA /* Assets.xcassets */; };
+		CF58814224011E7D00F7BBCA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF58814024011E7D00F7BBCA /* LaunchScreen.storyboard */; };
+		CF58814524011E7D00F7BBCA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF58814424011E7D00F7BBCA /* main.m */; };
+		CF58814F24011E7E00F7BBCA /* PassAndReactChainDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF58814E24011E7E00F7BBCA /* PassAndReactChainDemoTests.m */; };
+		CF58815A24011E7E00F7BBCA /* PassAndReactChainDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF58815924011E7E00F7BBCA /* PassAndReactChainDemoUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CF58814B24011E7E00F7BBCA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF58812724011E7A00F7BBCA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF58812E24011E7A00F7BBCA;
+			remoteInfo = PassAndReactChainDemo;
+		};
+		CF58815624011E7E00F7BBCA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF58812724011E7A00F7BBCA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF58812E24011E7A00F7BBCA;
+			remoteInfo = PassAndReactChainDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CF2908AB2402831F00EB7C05 /* CyanView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CyanView.h; sourceTree = "<group>"; };
+		CF2908AC2402831F00EB7C05 /* CyanView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CyanView.m; sourceTree = "<group>"; };
+		CF2908AE24028D3500EB7C05 /* YellowView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YellowView.h; sourceTree = "<group>"; };
+		CF2908AF24028D3500EB7C05 /* YellowView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YellowView.m; sourceTree = "<group>"; };
+		CF58812F24011E7A00F7BBCA /* PassAndReactChainDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PassAndReactChainDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF58813224011E7A00F7BBCA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CF58813324011E7A00F7BBCA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CF58813524011E7A00F7BBCA /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		CF58813624011E7A00F7BBCA /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		CF58813824011E7A00F7BBCA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CF58813924011E7A00F7BBCA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CF58813C24011E7A00F7BBCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CF58813E24011E7D00F7BBCA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CF58814124011E7D00F7BBCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CF58814324011E7D00F7BBCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF58814424011E7D00F7BBCA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CF58814A24011E7E00F7BBCA /* PassAndReactChainDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PassAndReactChainDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF58814E24011E7E00F7BBCA /* PassAndReactChainDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PassAndReactChainDemoTests.m; sourceTree = "<group>"; };
+		CF58815024011E7E00F7BBCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF58815524011E7E00F7BBCA /* PassAndReactChainDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PassAndReactChainDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF58815924011E7E00F7BBCA /* PassAndReactChainDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PassAndReactChainDemoUITests.m; sourceTree = "<group>"; };
+		CF58815B24011E7E00F7BBCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF58812C24011E7A00F7BBCA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF58814724011E7E00F7BBCA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF58815224011E7E00F7BBCA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF58812624011E7A00F7BBCA = {
+			isa = PBXGroup;
+			children = (
+				CF58813124011E7A00F7BBCA /* PassAndReactChainDemo */,
+				CF58814D24011E7E00F7BBCA /* PassAndReactChainDemoTests */,
+				CF58815824011E7E00F7BBCA /* PassAndReactChainDemoUITests */,
+				CF58813024011E7A00F7BBCA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CF58813024011E7A00F7BBCA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF58812F24011E7A00F7BBCA /* PassAndReactChainDemo.app */,
+				CF58814A24011E7E00F7BBCA /* PassAndReactChainDemoTests.xctest */,
+				CF58815524011E7E00F7BBCA /* PassAndReactChainDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF58813124011E7A00F7BBCA /* PassAndReactChainDemo */ = {
+			isa = PBXGroup;
+			children = (
+				CF58813224011E7A00F7BBCA /* AppDelegate.h */,
+				CF58813324011E7A00F7BBCA /* AppDelegate.m */,
+				CF58813524011E7A00F7BBCA /* SceneDelegate.h */,
+				CF58813624011E7A00F7BBCA /* SceneDelegate.m */,
+				CF58813824011E7A00F7BBCA /* ViewController.h */,
+				CF58813924011E7A00F7BBCA /* ViewController.m */,
+				CF2908AE24028D3500EB7C05 /* YellowView.h */,
+				CF2908AF24028D3500EB7C05 /* YellowView.m */,
+				CF2908AB2402831F00EB7C05 /* CyanView.h */,
+				CF2908AC2402831F00EB7C05 /* CyanView.m */,
+				CF58813B24011E7A00F7BBCA /* Main.storyboard */,
+				CF58813E24011E7D00F7BBCA /* Assets.xcassets */,
+				CF58814024011E7D00F7BBCA /* LaunchScreen.storyboard */,
+				CF58814324011E7D00F7BBCA /* Info.plist */,
+				CF58814424011E7D00F7BBCA /* main.m */,
+			);
+			path = PassAndReactChainDemo;
+			sourceTree = "<group>";
+		};
+		CF58814D24011E7E00F7BBCA /* PassAndReactChainDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				CF58814E24011E7E00F7BBCA /* PassAndReactChainDemoTests.m */,
+				CF58815024011E7E00F7BBCA /* Info.plist */,
+			);
+			path = PassAndReactChainDemoTests;
+			sourceTree = "<group>";
+		};
+		CF58815824011E7E00F7BBCA /* PassAndReactChainDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CF58815924011E7E00F7BBCA /* PassAndReactChainDemoUITests.m */,
+				CF58815B24011E7E00F7BBCA /* Info.plist */,
+			);
+			path = PassAndReactChainDemoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF58812E24011E7A00F7BBCA /* PassAndReactChainDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF58815E24011E7E00F7BBCA /* Build configuration list for PBXNativeTarget "PassAndReactChainDemo" */;
+			buildPhases = (
+				CF58812B24011E7A00F7BBCA /* Sources */,
+				CF58812C24011E7A00F7BBCA /* Frameworks */,
+				CF58812D24011E7A00F7BBCA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PassAndReactChainDemo;
+			productName = PassAndReactChainDemo;
+			productReference = CF58812F24011E7A00F7BBCA /* PassAndReactChainDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CF58814924011E7E00F7BBCA /* PassAndReactChainDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF58816124011E7E00F7BBCA /* Build configuration list for PBXNativeTarget "PassAndReactChainDemoTests" */;
+			buildPhases = (
+				CF58814624011E7E00F7BBCA /* Sources */,
+				CF58814724011E7E00F7BBCA /* Frameworks */,
+				CF58814824011E7E00F7BBCA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF58814C24011E7E00F7BBCA /* PBXTargetDependency */,
+			);
+			name = PassAndReactChainDemoTests;
+			productName = PassAndReactChainDemoTests;
+			productReference = CF58814A24011E7E00F7BBCA /* PassAndReactChainDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CF58815424011E7E00F7BBCA /* PassAndReactChainDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF58816424011E7E00F7BBCA /* Build configuration list for PBXNativeTarget "PassAndReactChainDemoUITests" */;
+			buildPhases = (
+				CF58815124011E7E00F7BBCA /* Sources */,
+				CF58815224011E7E00F7BBCA /* Frameworks */,
+				CF58815324011E7E00F7BBCA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF58815724011E7E00F7BBCA /* PBXTargetDependency */,
+			);
+			name = PassAndReactChainDemoUITests;
+			productName = PassAndReactChainDemoUITests;
+			productReference = CF58815524011E7E00F7BBCA /* PassAndReactChainDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF58812724011E7A00F7BBCA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Liu Tao";
+				TargetAttributes = {
+					CF58812E24011E7A00F7BBCA = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					CF58814924011E7E00F7BBCA = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = CF58812E24011E7A00F7BBCA;
+					};
+					CF58815424011E7E00F7BBCA = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = CF58812E24011E7A00F7BBCA;
+					};
+				};
+			};
+			buildConfigurationList = CF58812A24011E7A00F7BBCA /* Build configuration list for PBXProject "PassAndReactChainDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF58812624011E7A00F7BBCA;
+			productRefGroup = CF58813024011E7A00F7BBCA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF58812E24011E7A00F7BBCA /* PassAndReactChainDemo */,
+				CF58814924011E7E00F7BBCA /* PassAndReactChainDemoTests */,
+				CF58815424011E7E00F7BBCA /* PassAndReactChainDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF58812D24011E7A00F7BBCA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF58814224011E7D00F7BBCA /* LaunchScreen.storyboard in Resources */,
+				CF58813F24011E7D00F7BBCA /* Assets.xcassets in Resources */,
+				CF58813D24011E7A00F7BBCA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF58814824011E7E00F7BBCA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF58815324011E7E00F7BBCA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF58812B24011E7A00F7BBCA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF2908AD2402831F00EB7C05 /* CyanView.m in Sources */,
+				CF58813A24011E7A00F7BBCA /* ViewController.m in Sources */,
+				CF58813424011E7A00F7BBCA /* AppDelegate.m in Sources */,
+				CF58814524011E7D00F7BBCA /* main.m in Sources */,
+				CF2908B024028D3500EB7C05 /* YellowView.m in Sources */,
+				CF58813724011E7A00F7BBCA /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF58814624011E7E00F7BBCA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF58814F24011E7E00F7BBCA /* PassAndReactChainDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF58815124011E7E00F7BBCA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF58815A24011E7E00F7BBCA /* PassAndReactChainDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CF58814C24011E7E00F7BBCA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF58812E24011E7A00F7BBCA /* PassAndReactChainDemo */;
+			targetProxy = CF58814B24011E7E00F7BBCA /* PBXContainerItemProxy */;
+		};
+		CF58815724011E7E00F7BBCA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF58812E24011E7A00F7BBCA /* PassAndReactChainDemo */;
+			targetProxy = CF58815624011E7E00F7BBCA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CF58813B24011E7A00F7BBCA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF58813C24011E7A00F7BBCA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CF58814024011E7D00F7BBCA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF58814124011E7D00F7BBCA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CF58815C24011E7E00F7BBCA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CF58815D24011E7E00F7BBCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CF58815F24011E7E00F7BBCA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LPF3349M6Q;
+				INFOPLIST_FILE = PassAndReactChainDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ThomasLTD.PassAndReactChainDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CF58816024011E7E00F7BBCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LPF3349M6Q;
+				INFOPLIST_FILE = PassAndReactChainDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ThomasLTD.PassAndReactChainDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CF58816224011E7E00F7BBCA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LPF3349M6Q;
+				INFOPLIST_FILE = PassAndReactChainDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ThomasLTD.PassAndReactChainDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PassAndReactChainDemo.app/PassAndReactChainDemo";
+			};
+			name = Debug;
+		};
+		CF58816324011E7E00F7BBCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LPF3349M6Q;
+				INFOPLIST_FILE = PassAndReactChainDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ThomasLTD.PassAndReactChainDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PassAndReactChainDemo.app/PassAndReactChainDemo";
+			};
+			name = Release;
+		};
+		CF58816524011E7E00F7BBCA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LPF3349M6Q;
+				INFOPLIST_FILE = PassAndReactChainDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ThomasLTD.PassAndReactChainDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PassAndReactChainDemo;
+			};
+			name = Debug;
+		};
+		CF58816624011E7E00F7BBCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LPF3349M6Q;
+				INFOPLIST_FILE = PassAndReactChainDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ThomasLTD.PassAndReactChainDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PassAndReactChainDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF58812A24011E7A00F7BBCA /* Build configuration list for PBXProject "PassAndReactChainDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF58815C24011E7E00F7BBCA /* Debug */,
+				CF58815D24011E7E00F7BBCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF58815E24011E7E00F7BBCA /* Build configuration list for PBXNativeTarget "PassAndReactChainDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF58815F24011E7E00F7BBCA /* Debug */,
+				CF58816024011E7E00F7BBCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF58816124011E7E00F7BBCA /* Build configuration list for PBXNativeTarget "PassAndReactChainDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF58816224011E7E00F7BBCA /* Debug */,
+				CF58816324011E7E00F7BBCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF58816424011E7E00F7BBCA /* Build configuration list for PBXNativeTarget "PassAndReactChainDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF58816524011E7E00F7BBCA /* Debug */,
+				CF58816624011E7E00F7BBCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CF58812724011E7A00F7BBCA /* Project object */;
+}

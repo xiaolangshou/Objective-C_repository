@@ -1,0 +1,638 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0414B56F244C11BE00A9F060 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 0414B56E244C11BE00A9F060 /* GCDAsyncUdpSocket.m */; };
+		046AC73B244859C200539379 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 046AC73A244859C200539379 /* AppDelegate.m */; };
+		046AC73E244859C200539379 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 046AC73D244859C200539379 /* SceneDelegate.m */; };
+		046AC741244859C200539379 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046AC740244859C200539379 /* ViewController.m */; };
+		046AC744244859C200539379 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 046AC742244859C200539379 /* Main.storyboard */; };
+		046AC746244859C200539379 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 046AC745244859C200539379 /* Assets.xcassets */; };
+		046AC749244859C200539379 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 046AC747244859C200539379 /* LaunchScreen.storyboard */; };
+		046AC74C244859C200539379 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 046AC74B244859C200539379 /* main.m */; };
+		046AC756244859C300539379 /* RemoteCamDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 046AC755244859C300539379 /* RemoteCamDemoTests.m */; };
+		046AC761244859C300539379 /* RemoteCamDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 046AC760244859C300539379 /* RemoteCamDemoUITests.m */; };
+		046AC77224485A7000539379 /* TCPServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 046AC77024485A7000539379 /* TCPServer.m */; };
+		046AC77524485A7F00539379 /* H264Encoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 046AC77324485A7F00539379 /* H264Encoder.m */; };
+		046AC77824485B4A00539379 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 046AC77724485B4A00539379 /* GCDAsyncSocket.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		046AC752244859C300539379 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 046AC72E244859C200539379 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 046AC735244859C200539379;
+			remoteInfo = RemoteCamDemo;
+		};
+		046AC75D244859C300539379 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 046AC72E244859C200539379 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 046AC735244859C200539379;
+			remoteInfo = RemoteCamDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0414B56D244C11BE00A9F060 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		0414B56E244C11BE00A9F060 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		046AC736244859C200539379 /* RemoteCamDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RemoteCamDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		046AC739244859C200539379 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		046AC73A244859C200539379 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		046AC73C244859C200539379 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		046AC73D244859C200539379 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		046AC73F244859C200539379 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		046AC740244859C200539379 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		046AC743244859C200539379 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		046AC745244859C200539379 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		046AC748244859C200539379 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		046AC74A244859C200539379 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		046AC74B244859C200539379 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		046AC751244859C300539379 /* RemoteCamDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RemoteCamDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		046AC755244859C300539379 /* RemoteCamDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RemoteCamDemoTests.m; sourceTree = "<group>"; };
+		046AC757244859C300539379 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		046AC75C244859C300539379 /* RemoteCamDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RemoteCamDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		046AC760244859C300539379 /* RemoteCamDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RemoteCamDemoUITests.m; sourceTree = "<group>"; };
+		046AC762244859C300539379 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		046AC77024485A7000539379 /* TCPServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCPServer.m; sourceTree = "<group>"; };
+		046AC77124485A7000539379 /* TCPServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCPServer.h; sourceTree = "<group>"; };
+		046AC77324485A7F00539379 /* H264Encoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = H264Encoder.m; sourceTree = "<group>"; };
+		046AC77424485A7F00539379 /* H264Encoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = H264Encoder.h; sourceTree = "<group>"; };
+		046AC77624485B4A00539379 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		046AC77724485B4A00539379 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		046AC733244859C200539379 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		046AC74E244859C300539379 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		046AC759244859C300539379 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		046AC72D244859C200539379 = {
+			isa = PBXGroup;
+			children = (
+				046AC738244859C200539379 /* RemoteCamDemo */,
+				046AC754244859C300539379 /* RemoteCamDemoTests */,
+				046AC75F244859C300539379 /* RemoteCamDemoUITests */,
+				046AC737244859C200539379 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		046AC737244859C200539379 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				046AC736244859C200539379 /* RemoteCamDemo.app */,
+				046AC751244859C300539379 /* RemoteCamDemoTests.xctest */,
+				046AC75C244859C300539379 /* RemoteCamDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		046AC738244859C200539379 /* RemoteCamDemo */ = {
+			isa = PBXGroup;
+			children = (
+				046AC77924485D2900539379 /* Home */,
+				046AC76F24485A0F00539379 /* SocketInterface */,
+				046AC76E244859FE00539379 /* H264Encoder */,
+				046AC742244859C200539379 /* Main.storyboard */,
+				046AC745244859C200539379 /* Assets.xcassets */,
+				046AC747244859C200539379 /* LaunchScreen.storyboard */,
+				046AC74A244859C200539379 /* Info.plist */,
+				046AC74B244859C200539379 /* main.m */,
+			);
+			path = RemoteCamDemo;
+			sourceTree = "<group>";
+		};
+		046AC754244859C300539379 /* RemoteCamDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				046AC755244859C300539379 /* RemoteCamDemoTests.m */,
+				046AC757244859C300539379 /* Info.plist */,
+			);
+			path = RemoteCamDemoTests;
+			sourceTree = "<group>";
+		};
+		046AC75F244859C300539379 /* RemoteCamDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				046AC760244859C300539379 /* RemoteCamDemoUITests.m */,
+				046AC762244859C300539379 /* Info.plist */,
+			);
+			path = RemoteCamDemoUITests;
+			sourceTree = "<group>";
+		};
+		046AC76E244859FE00539379 /* H264Encoder */ = {
+			isa = PBXGroup;
+			children = (
+				046AC77424485A7F00539379 /* H264Encoder.h */,
+				046AC77324485A7F00539379 /* H264Encoder.m */,
+			);
+			path = H264Encoder;
+			sourceTree = "<group>";
+		};
+		046AC76F24485A0F00539379 /* SocketInterface */ = {
+			isa = PBXGroup;
+			children = (
+				046AC77124485A7000539379 /* TCPServer.h */,
+				046AC77024485A7000539379 /* TCPServer.m */,
+				046AC77624485B4A00539379 /* GCDAsyncSocket.h */,
+				046AC77724485B4A00539379 /* GCDAsyncSocket.m */,
+				0414B56D244C11BE00A9F060 /* GCDAsyncUdpSocket.h */,
+				0414B56E244C11BE00A9F060 /* GCDAsyncUdpSocket.m */,
+			);
+			path = SocketInterface;
+			sourceTree = "<group>";
+		};
+		046AC77924485D2900539379 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				046AC739244859C200539379 /* AppDelegate.h */,
+				046AC73A244859C200539379 /* AppDelegate.m */,
+				046AC73C244859C200539379 /* SceneDelegate.h */,
+				046AC73D244859C200539379 /* SceneDelegate.m */,
+				046AC73F244859C200539379 /* ViewController.h */,
+				046AC740244859C200539379 /* ViewController.m */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		046AC735244859C200539379 /* RemoteCamDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 046AC765244859C300539379 /* Build configuration list for PBXNativeTarget "RemoteCamDemo" */;
+			buildPhases = (
+				046AC732244859C200539379 /* Sources */,
+				046AC733244859C200539379 /* Frameworks */,
+				046AC734244859C200539379 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RemoteCamDemo;
+			productName = RemoteCamDemo;
+			productReference = 046AC736244859C200539379 /* RemoteCamDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		046AC750244859C300539379 /* RemoteCamDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 046AC768244859C300539379 /* Build configuration list for PBXNativeTarget "RemoteCamDemoTests" */;
+			buildPhases = (
+				046AC74D244859C300539379 /* Sources */,
+				046AC74E244859C300539379 /* Frameworks */,
+				046AC74F244859C300539379 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				046AC753244859C300539379 /* PBXTargetDependency */,
+			);
+			name = RemoteCamDemoTests;
+			productName = RemoteCamDemoTests;
+			productReference = 046AC751244859C300539379 /* RemoteCamDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		046AC75B244859C300539379 /* RemoteCamDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 046AC76B244859C300539379 /* Build configuration list for PBXNativeTarget "RemoteCamDemoUITests" */;
+			buildPhases = (
+				046AC758244859C300539379 /* Sources */,
+				046AC759244859C300539379 /* Frameworks */,
+				046AC75A244859C300539379 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				046AC75E244859C300539379 /* PBXTargetDependency */,
+			);
+			name = RemoteCamDemoUITests;
+			productName = RemoteCamDemoUITests;
+			productReference = 046AC75C244859C300539379 /* RemoteCamDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		046AC72E244859C200539379 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = TLLTD;
+				TargetAttributes = {
+					046AC735244859C200539379 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					046AC750244859C300539379 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 046AC735244859C200539379;
+					};
+					046AC75B244859C300539379 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 046AC735244859C200539379;
+					};
+				};
+			};
+			buildConfigurationList = 046AC731244859C200539379 /* Build configuration list for PBXProject "RemoteCamDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 046AC72D244859C200539379;
+			productRefGroup = 046AC737244859C200539379 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				046AC735244859C200539379 /* RemoteCamDemo */,
+				046AC750244859C300539379 /* RemoteCamDemoTests */,
+				046AC75B244859C300539379 /* RemoteCamDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		046AC734244859C200539379 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				046AC749244859C200539379 /* LaunchScreen.storyboard in Resources */,
+				046AC746244859C200539379 /* Assets.xcassets in Resources */,
+				046AC744244859C200539379 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		046AC74F244859C300539379 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		046AC75A244859C300539379 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		046AC732244859C200539379 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				046AC77524485A7F00539379 /* H264Encoder.m in Sources */,
+				046AC741244859C200539379 /* ViewController.m in Sources */,
+				046AC73B244859C200539379 /* AppDelegate.m in Sources */,
+				046AC74C244859C200539379 /* main.m in Sources */,
+				0414B56F244C11BE00A9F060 /* GCDAsyncUdpSocket.m in Sources */,
+				046AC77224485A7000539379 /* TCPServer.m in Sources */,
+				046AC77824485B4A00539379 /* GCDAsyncSocket.m in Sources */,
+				046AC73E244859C200539379 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		046AC74D244859C300539379 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				046AC756244859C300539379 /* RemoteCamDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		046AC758244859C300539379 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				046AC761244859C300539379 /* RemoteCamDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		046AC753244859C300539379 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 046AC735244859C200539379 /* RemoteCamDemo */;
+			targetProxy = 046AC752244859C300539379 /* PBXContainerItemProxy */;
+		};
+		046AC75E244859C300539379 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 046AC735244859C200539379 /* RemoteCamDemo */;
+			targetProxy = 046AC75D244859C300539379 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		046AC742244859C200539379 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				046AC743244859C200539379 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		046AC747244859C200539379 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				046AC748244859C200539379 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		046AC763244859C300539379 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		046AC764244859C300539379 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		046AC766244859C300539379 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LPF3349M6Q;
+				INFOPLIST_FILE = RemoteCamDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TLTech.RemoteCamDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		046AC767244859C300539379 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LPF3349M6Q;
+				INFOPLIST_FILE = RemoteCamDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TLTech.RemoteCamDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		046AC769244859C300539379 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LPF3349M6Q;
+				INFOPLIST_FILE = RemoteCamDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TLTech.RemoteCamDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RemoteCamDemo.app/RemoteCamDemo";
+			};
+			name = Debug;
+		};
+		046AC76A244859C300539379 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LPF3349M6Q;
+				INFOPLIST_FILE = RemoteCamDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TLTech.RemoteCamDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RemoteCamDemo.app/RemoteCamDemo";
+			};
+			name = Release;
+		};
+		046AC76C244859C300539379 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LPF3349M6Q;
+				INFOPLIST_FILE = RemoteCamDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TLTech.RemoteCamDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RemoteCamDemo;
+			};
+			name = Debug;
+		};
+		046AC76D244859C300539379 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LPF3349M6Q;
+				INFOPLIST_FILE = RemoteCamDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TLTech.RemoteCamDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RemoteCamDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		046AC731244859C200539379 /* Build configuration list for PBXProject "RemoteCamDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				046AC763244859C300539379 /* Debug */,
+				046AC764244859C300539379 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		046AC765244859C300539379 /* Build configuration list for PBXNativeTarget "RemoteCamDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				046AC766244859C300539379 /* Debug */,
+				046AC767244859C300539379 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		046AC768244859C300539379 /* Build configuration list for PBXNativeTarget "RemoteCamDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				046AC769244859C300539379 /* Debug */,
+				046AC76A244859C300539379 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		046AC76B244859C300539379 /* Build configuration list for PBXNativeTarget "RemoteCamDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				046AC76C244859C300539379 /* Debug */,
+				046AC76D244859C300539379 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 046AC72E244859C200539379 /* Project object */;
+}

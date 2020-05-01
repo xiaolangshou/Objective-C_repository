@@ -1,0 +1,6 @@
+framework module Pods_UDPSocketDemo {
+  umbrella header "Pods-UDPSocketDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}
