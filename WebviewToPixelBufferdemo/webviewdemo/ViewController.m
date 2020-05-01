@@ -7,10 +7,11 @@
 //
 
 #import "ViewController.h"
+#import <WebKit/WebKit.h>
 
 @interface ViewController ()
 
-@property (strong, nonatomic) UIWebView *webView;
+@property (strong, nonatomic) WKWebView *webView;
 @property (strong, nonatomic) NSString *str;
 @property (strong, nonatomic) NSTimer *timer;
 
@@ -22,7 +23,7 @@
     [super viewDidLoad];
     
     self.str = @"http://bos.nj.bpc.baidu.com/tieba-smallvideo/11772_3c435014fb2dd9a5fd56a57cc369f6a0.mp4";
-    self.webView = [[UIWebView alloc] initWithFrame: CGRectMake(0,
+    self.webView = [[WKWebView alloc] initWithFrame: CGRectMake(0,
                                                                0,
                                                                UIScreen.mainScreen.bounds.size.width,
                                                                UIScreen.mainScreen.bounds.size.height)];
