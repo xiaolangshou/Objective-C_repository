@@ -7,13 +7,13 @@
 //
 
 #import "ViewController.h"
-#import "NSString+NSString_Category.h"
-//#import "NSString+NSString_Extension.h"
+#import "NSString+Operations.h"
+#import "NSString+NSString_Extension.h"
 // #import "Protocol+Arr.h"
 
-@interface ViewController () /**<>*/
+@interface ViewController ()
 
-@property (strong, nonatomic) NSString *strrrs;
+@property (strong, nonatomic) NSString *str;
 
 @end
 
@@ -22,17 +22,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    _strrrs = @"aaa";
+    NSLog(@"original name1 = %@", _str.name);
     
-    NSLog(@"original name = %@", _strrrs.name);
+    _str = @"aaa";
     
-    _strrrs.name = @"names";
+    NSLog(@"original name2 = %@", _str.name);
     
-    NSLog(@"%@", [_strrrs add:@"bbb"]);
+    _str.name = @"bbb";
+    
+    NSLog(@"%@", [_str add:@"ccc"]);
+    [_str added:@"ddd"];
 }
 
-//- (nonnull NSString *)addd:(nonnull NSString *)str {
-//    return str;
-//}
 
 @end

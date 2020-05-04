@@ -24,7 +24,6 @@ typedef void (^CompletionBlock)(NSString *str);
     [self performActionWithBlock:^(NSString *str) {
         NSLog(@"block str:%@", str);
     }];
-    
 }
 
 - (void)performActionWithBlock:(CompletionBlock)completionBlock {
