@@ -1,14 +1,14 @@
 //
-//  ZSWPhotoController.h
+//  TLPhotoController.h
 //  AVCaptureCamera
 //
-//  Created by ZSW on 2018/11/7.
-//  Copyright © 2018年 ZSW. All rights reserved.
+//  Created by TL on 2018/11/7.
+//  Copyright © 2018年 TL. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface ZSWPhotoController : UIViewController
+@interface TLPhotoController : UIViewController
 
 /* photo */
 @property (nonatomic, strong) UIImage *photo;

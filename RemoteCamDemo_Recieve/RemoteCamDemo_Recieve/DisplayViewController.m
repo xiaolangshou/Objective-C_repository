@@ -38,7 +38,7 @@
     
     // socket 连接,IP 地址为采集端的IP,端口号可自定义
     [TCPClient sharedSocketClient].delegate = self;
-    [[TCPClient sharedSocketClient] connectServerWithHost:@"10.161.222.122" andPort: 8889];
+    [[TCPClient sharedSocketClient] connectServerWithHost:@"192.168.2.196" andPort: 8889];
 }
 
 // 设置播放器
@@ -82,10 +82,10 @@
         return;
     }
     // 回主线程给 layer 进行展示
-    dispatch_async(dispatch_get_main_queue(), ^{
+//    dispatch_async(dispatch_get_main_queue(), ^{
         self.playLayer.pixelBuffer = imageBuffer;
         CVPixelBufferRelease(imageBuffer);
-    });
+//    });
 }
 
 // 数据缓存

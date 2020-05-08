@@ -1,16 +1,16 @@
 //
-//  ZSWMotionManager.h
+//  TLMotionManager.h
 //  AVCaptureCamera
 //
-//  Created by ZSW on 2018/11/8.
-//  Copyright © 2018年 ZSW. All rights reserved.
+//  Created by TL on 2018/11/8.
+//  Copyright © 2018年 TL. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
 typedef void (^MotionDeviceOrientation)(NSInteger orientation);
 
-@interface ZSWMotionManager : NSObject
+@interface TLMotionManager : NSObject
 
 /**
 开始陀螺仪监测

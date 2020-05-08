@@ -1,25 +1,24 @@
 //
-//  ZSWPhotoController.m
+//  TLPhotoController.m
 //  AVCaptureCamera
 //
-//  Created by ZSW on 2018/11/7.
-//  Copyright © 2018年 ZSW. All rights reserved.
+//  Created by TL on 2018/11/7.
+//  Copyright © 2018年 TL. All rights reserved.
 //
 
-#import "ZSWPhotoController.h"
+#import "TLPhotoController.h"
 
-@interface ZSWPhotoController ()
+@interface TLPhotoController ()
 
 /* imageView */
 @property (nonatomic, strong) UIImageView *imageView;
 
 @end
 
-@implementation ZSWPhotoController
+@implementation TLPhotoController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
     
     self.view.backgroundColor = [UIColor blackColor];
     
@@ -50,13 +49,6 @@
             self.imageView.image = self.photo;
             break;
     }
-    
-    
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 //重置图片方向

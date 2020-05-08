@@ -1,14 +1,14 @@
 //
-//  ZSWCameraTool.m
+//  TLCameraTool.m
 //  AVCaptureCamera
 //
-//  Created by ZSW on 2018/11/7.
-//  Copyright © 2018年 ZSW. All rights reserved.
+//  Created by TL on 2018/11/7.
+//  Copyright © 2018年 TL. All rights reserved.
 //
 
-#import "ZSWCameraTool.h"
+#import "TLCameraTool.h"
 
-@interface ZSWCameraTool ()
+@interface TLCameraTool ()
 
 /* 拍摄按钮 */
 @property (nonatomic, strong) UIButton *startBtn;
@@ -21,7 +21,7 @@
 
 @end
 
-@implementation ZSWCameraTool
+@implementation TLCameraTool
 
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];

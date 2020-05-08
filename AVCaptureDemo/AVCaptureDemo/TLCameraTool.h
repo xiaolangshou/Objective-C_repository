@@ -1,14 +1,14 @@
 //
-//  ZSWCameraTool.h
+//  TLCameraTool.h
 //  AVCaptureCamera
 //
-//  Created by ZSW on 2018/11/7.
-//  Copyright © 2018年 ZSW. All rights reserved.
+//  Created by TL on 2018/11/7.
+//  Copyright © 2018年 TL. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@protocol ZSWCameraToolDelegate <NSObject>
+@protocol TLCameraToolDelegate <NSObject>
 //开始拍摄
 - (void)startCamera;
 //闪光灯设置
@@ -22,10 +22,10 @@
 
 @end
 
-@interface ZSWCameraTool : UIView
+@interface TLCameraTool : UIView
 
 /* delegate */
-@property (nonatomic, weak) id <ZSWCameraToolDelegate> delegate;
+@property (nonatomic, weak) id <TLCameraToolDelegate> delegate;
 /* image */
 @property (nonatomic, strong) UIImage *image;
 

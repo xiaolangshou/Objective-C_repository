@@ -1,15 +1,15 @@
 //
-//  ZSWMotionManager.m
+//  TLMotionManager.m
 //  AVCaptureCamera
 //
-//  Created by ZSW on 2018/11/8.
-//  Copyright © 2018年 ZSW. All rights reserved.
+//  Created by TL on 2018/11/8.
+//  Copyright © 2018年 TL. All rights reserved.
 //
 
-#import "ZSWMotionManager.h"
+#import "TLMotionManager.h"
 #import <CoreMotion/CoreMotion.h>
 
-@interface ZSWMotionManager ()
+@interface TLMotionManager ()
 
 /* motionManager */
 @property (nonatomic, strong) CMMotionManager *motionManager;
@@ -18,19 +18,19 @@
 
 @end
 
-@implementation ZSWMotionManager
+@implementation TLMotionManager
 
 - (void)startMotionManager: (MotionDeviceOrientation)motionDeviceOrientation
 {
     self.motionDeviceOrientation = motionDeviceOrientation;
     NSOperationQueue *queue = [[NSOperationQueue alloc] init];
-    //开启陀螺仪监测设备方向，motionManager必须设置为全局强引用属性，否则无法开启陀螺仪监测；
+    // 开启陀螺仪监测设备方向，motionManager必须设置为全局强引用属性，否则无法开启陀螺仪监测；
     self.motionManager.deviceMotionUpdateInterval = 0.1;
     if(self.motionManager.deviceMotionAvailable) {
         __weak __typeof(self) weak_self = self;
-        //实时更新陀螺仪设备感应
+        // 实时更新陀螺仪设备感应
         [self.motionManager startDeviceMotionUpdates];
-        //实时更新陀螺仪设备感应方法
+        // 实时更新陀螺仪设备感应方法
         [self.motionManager startDeviceMotionUpdatesToQueue:queue withHandler:^(CMDeviceMotion * _Nullable motion, NSError * _Nullable error) {
             //回到主线程，获取设备方向
             [weak_self performSelectorOnMainThread:@selector(handleDeviceMotion:) withObject:motion waitUntilDone:YES];

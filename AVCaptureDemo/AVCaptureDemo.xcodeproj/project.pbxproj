@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		042830CC2465452900EC2067 /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 042830CB2465452900EC2067 /* ViewController2.m */; };
 		04304DE42463EC9300522EC9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04304DE32463EC9300522EC9 /* AppDelegate.m */; };
 		04304DE72463EC9300522EC9 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04304DE62463EC9300522EC9 /* SceneDelegate.m */; };
 		04304DEA2463EC9300522EC9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04304DE92463EC9300522EC9 /* ViewController.m */; };
@@ -16,9 +17,9 @@
 		04304DF52463EC9400522EC9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04304DF42463EC9400522EC9 /* main.m */; };
 		04304DFF2463EC9400522EC9 /* AVCaptureDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04304DFE2463EC9400522EC9 /* AVCaptureDemoTests.m */; };
 		04304E0A2463EC9400522EC9 /* AVCaptureDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04304E092463EC9400522EC9 /* AVCaptureDemoUITests.m */; };
-		04304E192463F4E900522EC9 /* ZSWCameraTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 04304E182463F4E900522EC9 /* ZSWCameraTool.m */; };
-		04304E1C2463F50E00522EC9 /* ZSWPhotoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04304E1A2463F50E00522EC9 /* ZSWPhotoController.m */; };
-		04304E1F246406F200522EC9 /* ZSWMotionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04304E1E246406F200522EC9 /* ZSWMotionManager.m */; };
+		04304E192463F4E900522EC9 /* TLCameraTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 04304E182463F4E900522EC9 /* TLCameraTool.m */; };
+		04304E1C2463F50E00522EC9 /* TLPhotoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04304E1A2463F50E00522EC9 /* TLPhotoController.m */; };
+		04304E1F246406F200522EC9 /* TLMotionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04304E1E246406F200522EC9 /* TLMotionManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		042830CA2465452900EC2067 /* ViewController2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
+		042830CB2465452900EC2067 /* ViewController2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
 		04304DDF2463EC9300522EC9 /* AVCaptureDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AVCaptureDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04304DE22463EC9300522EC9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		04304DE32463EC9300522EC9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -57,12 +60,12 @@
 		04304E052463EC9400522EC9 /* AVCaptureDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AVCaptureDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04304E092463EC9400522EC9 /* AVCaptureDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVCaptureDemoUITests.m; sourceTree = "<group>"; };
 		04304E0B2463EC9400522EC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		04304E172463F4E900522EC9 /* ZSWCameraTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSWCameraTool.h; sourceTree = "<group>"; };
-		04304E182463F4E900522EC9 /* ZSWCameraTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSWCameraTool.m; sourceTree = "<group>"; };
-		04304E1A2463F50E00522EC9 /* ZSWPhotoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSWPhotoController.m; sourceTree = "<group>"; };
-		04304E1B2463F50E00522EC9 /* ZSWPhotoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSWPhotoController.h; sourceTree = "<group>"; };
-		04304E1D246406F200522EC9 /* ZSWMotionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSWMotionManager.h; sourceTree = "<group>"; };
-		04304E1E246406F200522EC9 /* ZSWMotionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSWMotionManager.m; sourceTree = "<group>"; };
+		04304E172463F4E900522EC9 /* TLCameraTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLCameraTool.h; sourceTree = "<group>"; };
+		04304E182463F4E900522EC9 /* TLCameraTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLCameraTool.m; sourceTree = "<group>"; };
+		04304E1A2463F50E00522EC9 /* TLPhotoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLPhotoController.m; sourceTree = "<group>"; };
+		04304E1B2463F50E00522EC9 /* TLPhotoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLPhotoController.h; sourceTree = "<group>"; };
+		04304E1D246406F200522EC9 /* TLMotionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLMotionManager.h; sourceTree = "<group>"; };
+		04304E1E246406F200522EC9 /* TLMotionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLMotionManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,12 +122,14 @@
 				04304DE62463EC9300522EC9 /* SceneDelegate.m */,
 				04304DE82463EC9300522EC9 /* ViewController.h */,
 				04304DE92463EC9300522EC9 /* ViewController.m */,
-				04304E172463F4E900522EC9 /* ZSWCameraTool.h */,
-				04304E182463F4E900522EC9 /* ZSWCameraTool.m */,
-				04304E1B2463F50E00522EC9 /* ZSWPhotoController.h */,
-				04304E1A2463F50E00522EC9 /* ZSWPhotoController.m */,
-				04304E1D246406F200522EC9 /* ZSWMotionManager.h */,
-				04304E1E246406F200522EC9 /* ZSWMotionManager.m */,
+				042830CA2465452900EC2067 /* ViewController2.h */,
+				042830CB2465452900EC2067 /* ViewController2.m */,
+				04304E172463F4E900522EC9 /* TLCameraTool.h */,
+				04304E182463F4E900522EC9 /* TLCameraTool.m */,
+				04304E1B2463F50E00522EC9 /* TLPhotoController.h */,
+				04304E1A2463F50E00522EC9 /* TLPhotoController.m */,
+				04304E1D246406F200522EC9 /* TLMotionManager.h */,
+				04304E1E246406F200522EC9 /* TLMotionManager.m */,
 				04304DEB2463EC9300522EC9 /* Main.storyboard */,
 				04304DEE2463EC9400522EC9 /* Assets.xcassets */,
 				04304DF02463EC9400522EC9 /* LaunchScreen.storyboard */,
@@ -283,10 +288,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				04304DEA2463EC9300522EC9 /* ViewController.m in Sources */,
-				04304E1F246406F200522EC9 /* ZSWMotionManager.m in Sources */,
-				04304E1C2463F50E00522EC9 /* ZSWPhotoController.m in Sources */,
+				04304E1F246406F200522EC9 /* TLMotionManager.m in Sources */,
+				04304E1C2463F50E00522EC9 /* TLPhotoController.m in Sources */,
 				04304DE42463EC9300522EC9 /* AppDelegate.m in Sources */,
-				04304E192463F4E900522EC9 /* ZSWCameraTool.m in Sources */,
+				04304E192463F4E900522EC9 /* TLCameraTool.m in Sources */,
+				042830CC2465452900EC2067 /* ViewController2.m in Sources */,
 				04304DF52463EC9400522EC9 /* main.m in Sources */,
 				04304DE72463EC9300522EC9 /* SceneDelegate.m in Sources */,
 			);
