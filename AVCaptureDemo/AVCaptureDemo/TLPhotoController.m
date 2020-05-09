@@ -22,7 +22,7 @@
     
     self.view.backgroundColor = [UIColor blackColor];
     
-    _imageView = [UIImageView new];
+    _imageView = [[UIImageView alloc] init];
     _imageView.frame = self.view.bounds;
     _imageView.contentMode = UIViewContentModeScaleAspectFit;  //避免图片被拉伸
     [self.view addSubview:_imageView];
@@ -37,13 +37,13 @@
     //根据拍摄时的屏幕方向，调整图片方向
     switch (self.orientation) {
         case UIDeviceOrientationLandscapeLeft:
-            [self resetImageWithOrientation:UIImageOrientationUp];
+            [self resetImageWithOrientation: UIImageOrientationUp];
             break;
         case UIDeviceOrientationLandscapeRight:
-            [self resetImageWithOrientation:UIImageOrientationDown];
+            [self resetImageWithOrientation: UIImageOrientationDown];
             break;
         case UIDeviceOrientationPortraitUpsideDown:
-            [self resetImageWithOrientation:UIImageOrientationLeft];
+            [self resetImageWithOrientation: UIImageOrientationLeft];
             break;
         default:
             self.imageView.image = self.photo;
@@ -66,7 +66,6 @@
     frame.size.height = height;
     _imageView.frame = frame;
     _imageView.center = self.view.center;
-    
 }
 
 - (void)backAction {

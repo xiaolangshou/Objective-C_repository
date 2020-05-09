@@ -1,0 +1,596 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		042830DB24655BBC00EC2067 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 042830DA24655BBC00EC2067 /* AppDelegate.m */; };
+		042830DE24655BBC00EC2067 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 042830DD24655BBC00EC2067 /* SceneDelegate.m */; };
+		042830E124655BBC00EC2067 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 042830E024655BBC00EC2067 /* ViewController.m */; };
+		042830E424655BBC00EC2067 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 042830E224655BBC00EC2067 /* Main.storyboard */; };
+		042830E624655BBE00EC2067 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 042830E524655BBE00EC2067 /* Assets.xcassets */; };
+		042830E924655BBE00EC2067 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 042830E724655BBE00EC2067 /* LaunchScreen.storyboard */; };
+		042830EC24655BBE00EC2067 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 042830EB24655BBE00EC2067 /* main.m */; };
+		042830F624655BBE00EC2067 /* BlockVSWeakTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 042830F524655BBE00EC2067 /* BlockVSWeakTests.m */; };
+		0428310124655BBE00EC2067 /* BlockVSWeakUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0428310024655BBE00EC2067 /* BlockVSWeakUITests.m */; };
+		0428311024656C0D00EC2067 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 0428310F24656C0D00EC2067 /* Person.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		042830F224655BBE00EC2067 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 042830CE24655BBC00EC2067 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 042830D524655BBC00EC2067;
+			remoteInfo = BlockVSWeak;
+		};
+		042830FD24655BBE00EC2067 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 042830CE24655BBC00EC2067 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 042830D524655BBC00EC2067;
+			remoteInfo = BlockVSWeak;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		042830D624655BBC00EC2067 /* BlockVSWeak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlockVSWeak.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		042830D924655BBC00EC2067 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		042830DA24655BBC00EC2067 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		042830DC24655BBC00EC2067 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		042830DD24655BBC00EC2067 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		042830DF24655BBC00EC2067 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		042830E024655BBC00EC2067 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		042830E324655BBC00EC2067 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		042830E524655BBE00EC2067 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		042830E824655BBE00EC2067 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		042830EA24655BBE00EC2067 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		042830EB24655BBE00EC2067 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		042830F124655BBE00EC2067 /* BlockVSWeakTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlockVSWeakTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		042830F524655BBE00EC2067 /* BlockVSWeakTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockVSWeakTests.m; sourceTree = "<group>"; };
+		042830F724655BBE00EC2067 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		042830FC24655BBE00EC2067 /* BlockVSWeakUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlockVSWeakUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0428310024655BBE00EC2067 /* BlockVSWeakUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockVSWeakUITests.m; sourceTree = "<group>"; };
+		0428310224655BBE00EC2067 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0428310E24656C0D00EC2067 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		0428310F24656C0D00EC2067 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		042830D324655BBC00EC2067 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		042830EE24655BBE00EC2067 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		042830F924655BBE00EC2067 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		042830CD24655BBC00EC2067 = {
+			isa = PBXGroup;
+			children = (
+				042830D824655BBC00EC2067 /* BlockVSWeak */,
+				042830F424655BBE00EC2067 /* BlockVSWeakTests */,
+				042830FF24655BBE00EC2067 /* BlockVSWeakUITests */,
+				042830D724655BBC00EC2067 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		042830D724655BBC00EC2067 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				042830D624655BBC00EC2067 /* BlockVSWeak.app */,
+				042830F124655BBE00EC2067 /* BlockVSWeakTests.xctest */,
+				042830FC24655BBE00EC2067 /* BlockVSWeakUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		042830D824655BBC00EC2067 /* BlockVSWeak */ = {
+			isa = PBXGroup;
+			children = (
+				042830D924655BBC00EC2067 /* AppDelegate.h */,
+				042830DA24655BBC00EC2067 /* AppDelegate.m */,
+				042830DC24655BBC00EC2067 /* SceneDelegate.h */,
+				042830DD24655BBC00EC2067 /* SceneDelegate.m */,
+				042830DF24655BBC00EC2067 /* ViewController.h */,
+				042830E024655BBC00EC2067 /* ViewController.m */,
+				0428310E24656C0D00EC2067 /* Person.h */,
+				0428310F24656C0D00EC2067 /* Person.m */,
+				042830E224655BBC00EC2067 /* Main.storyboard */,
+				042830E524655BBE00EC2067 /* Assets.xcassets */,
+				042830E724655BBE00EC2067 /* LaunchScreen.storyboard */,
+				042830EA24655BBE00EC2067 /* Info.plist */,
+				042830EB24655BBE00EC2067 /* main.m */,
+			);
+			path = BlockVSWeak;
+			sourceTree = "<group>";
+		};
+		042830F424655BBE00EC2067 /* BlockVSWeakTests */ = {
+			isa = PBXGroup;
+			children = (
+				042830F524655BBE00EC2067 /* BlockVSWeakTests.m */,
+				042830F724655BBE00EC2067 /* Info.plist */,
+			);
+			path = BlockVSWeakTests;
+			sourceTree = "<group>";
+		};
+		042830FF24655BBE00EC2067 /* BlockVSWeakUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0428310024655BBE00EC2067 /* BlockVSWeakUITests.m */,
+				0428310224655BBE00EC2067 /* Info.plist */,
+			);
+			path = BlockVSWeakUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		042830D524655BBC00EC2067 /* BlockVSWeak */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0428310524655BBE00EC2067 /* Build configuration list for PBXNativeTarget "BlockVSWeak" */;
+			buildPhases = (
+				042830D224655BBC00EC2067 /* Sources */,
+				042830D324655BBC00EC2067 /* Frameworks */,
+				042830D424655BBC00EC2067 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BlockVSWeak;
+			productName = BlockVSWeak;
+			productReference = 042830D624655BBC00EC2067 /* BlockVSWeak.app */;
+			productType = "com.apple.product-type.application";
+		};
+		042830F024655BBE00EC2067 /* BlockVSWeakTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0428310824655BBE00EC2067 /* Build configuration list for PBXNativeTarget "BlockVSWeakTests" */;
+			buildPhases = (
+				042830ED24655BBE00EC2067 /* Sources */,
+				042830EE24655BBE00EC2067 /* Frameworks */,
+				042830EF24655BBE00EC2067 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				042830F324655BBE00EC2067 /* PBXTargetDependency */,
+			);
+			name = BlockVSWeakTests;
+			productName = BlockVSWeakTests;
+			productReference = 042830F124655BBE00EC2067 /* BlockVSWeakTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		042830FB24655BBE00EC2067 /* BlockVSWeakUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0428310B24655BBE00EC2067 /* Build configuration list for PBXNativeTarget "BlockVSWeakUITests" */;
+			buildPhases = (
+				042830F824655BBE00EC2067 /* Sources */,
+				042830F924655BBE00EC2067 /* Frameworks */,
+				042830FA24655BBE00EC2067 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				042830FE24655BBE00EC2067 /* PBXTargetDependency */,
+			);
+			name = BlockVSWeakUITests;
+			productName = BlockVSWeakUITests;
+			productReference = 042830FC24655BBE00EC2067 /* BlockVSWeakUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		042830CE24655BBC00EC2067 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = TLLTD;
+				TargetAttributes = {
+					042830D524655BBC00EC2067 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					042830F024655BBE00EC2067 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 042830D524655BBC00EC2067;
+					};
+					042830FB24655BBE00EC2067 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 042830D524655BBC00EC2067;
+					};
+				};
+			};
+			buildConfigurationList = 042830D124655BBC00EC2067 /* Build configuration list for PBXProject "BlockVSWeak" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 042830CD24655BBC00EC2067;
+			productRefGroup = 042830D724655BBC00EC2067 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				042830D524655BBC00EC2067 /* BlockVSWeak */,
+				042830F024655BBE00EC2067 /* BlockVSWeakTests */,
+				042830FB24655BBE00EC2067 /* BlockVSWeakUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		042830D424655BBC00EC2067 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				042830E924655BBE00EC2067 /* LaunchScreen.storyboard in Resources */,
+				042830E624655BBE00EC2067 /* Assets.xcassets in Resources */,
+				042830E424655BBC00EC2067 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		042830EF24655BBE00EC2067 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		042830FA24655BBE00EC2067 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		042830D224655BBC00EC2067 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				042830E124655BBC00EC2067 /* ViewController.m in Sources */,
+				042830DB24655BBC00EC2067 /* AppDelegate.m in Sources */,
+				0428311024656C0D00EC2067 /* Person.m in Sources */,
+				042830EC24655BBE00EC2067 /* main.m in Sources */,
+				042830DE24655BBC00EC2067 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		042830ED24655BBE00EC2067 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				042830F624655BBE00EC2067 /* BlockVSWeakTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		042830F824655BBE00EC2067 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0428310124655BBE00EC2067 /* BlockVSWeakUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		042830F324655BBE00EC2067 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 042830D524655BBC00EC2067 /* BlockVSWeak */;
+			targetProxy = 042830F224655BBE00EC2067 /* PBXContainerItemProxy */;
+		};
+		042830FE24655BBE00EC2067 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 042830D524655BBC00EC2067 /* BlockVSWeak */;
+			targetProxy = 042830FD24655BBE00EC2067 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		042830E224655BBC00EC2067 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				042830E324655BBC00EC2067 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		042830E724655BBE00EC2067 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				042830E824655BBE00EC2067 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0428310324655BBE00EC2067 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0428310424655BBE00EC2067 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0428310624655BBE00EC2067 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LPF3349M6Q;
+				INFOPLIST_FILE = BlockVSWeak/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TLTech.BlockVSWeak;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0428310724655BBE00EC2067 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LPF3349M6Q;
+				INFOPLIST_FILE = BlockVSWeak/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TLTech.BlockVSWeak;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0428310924655BBE00EC2067 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LPF3349M6Q;
+				INFOPLIST_FILE = BlockVSWeakTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TLTech.BlockVSWeakTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BlockVSWeak.app/BlockVSWeak";
+			};
+			name = Debug;
+		};
+		0428310A24655BBE00EC2067 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LPF3349M6Q;
+				INFOPLIST_FILE = BlockVSWeakTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TLTech.BlockVSWeakTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BlockVSWeak.app/BlockVSWeak";
+			};
+			name = Release;
+		};
+		0428310C24655BBE00EC2067 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LPF3349M6Q;
+				INFOPLIST_FILE = BlockVSWeakUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TLTech.BlockVSWeakUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BlockVSWeak;
+			};
+			name = Debug;
+		};
+		0428310D24655BBE00EC2067 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LPF3349M6Q;
+				INFOPLIST_FILE = BlockVSWeakUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TLTech.BlockVSWeakUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BlockVSWeak;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		042830D124655BBC00EC2067 /* Build configuration list for PBXProject "BlockVSWeak" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0428310324655BBE00EC2067 /* Debug */,
+				0428310424655BBE00EC2067 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0428310524655BBE00EC2067 /* Build configuration list for PBXNativeTarget "BlockVSWeak" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0428310624655BBE00EC2067 /* Debug */,
+				0428310724655BBE00EC2067 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0428310824655BBE00EC2067 /* Build configuration list for PBXNativeTarget "BlockVSWeakTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0428310924655BBE00EC2067 /* Debug */,
+				0428310A24655BBE00EC2067 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0428310B24655BBE00EC2067 /* Build configuration list for PBXNativeTarget "BlockVSWeakUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0428310C24655BBE00EC2067 /* Debug */,
+				0428310D24655BBE00EC2067 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 042830CE24655BBC00EC2067 /* Project object */;
+}

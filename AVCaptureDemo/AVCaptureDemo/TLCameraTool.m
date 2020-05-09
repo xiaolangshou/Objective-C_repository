@@ -155,7 +155,7 @@
 
 - (UIView *)coverView {
     if(!_coverView) {
-        _coverView = [UIView new];
+        _coverView = [[UIView alloc] init];
         _coverView.hidden = YES;
     }
     return _coverView;

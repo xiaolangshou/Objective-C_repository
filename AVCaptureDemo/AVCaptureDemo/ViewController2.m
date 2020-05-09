@@ -164,7 +164,6 @@ didFinishProcessingPhoto:(AVCapturePhoto *)photo
         self.input = input;
         [self.session commitConfiguration];
     }
-    
 }
 
 - (void)reshoot {
