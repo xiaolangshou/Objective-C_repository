@@ -28,8 +28,8 @@
 }
 
 - (void)connectServerWithHost:(NSString *)host andPort:(UInt16)port {
-    self.socket = [[GCDAsyncSocket alloc] initWithDelegate:self
-                                             delegateQueue: dispatch_get_global_queue(0, 0)];
+    
+    self.socket = [[GCDAsyncSocket alloc] initWithDelegate:self delegateQueue:dispatch_get_global_queue(0, 0)];
     
     [self.socket disconnect];
     NSError *error = nil;

@@ -151,7 +151,9 @@
 
 #pragma mark - AVCaptureVideoDataOutputSampleBufferDelegate
 // 获取输入设备数据，有可能是音频有可能是视频
-- (void)captureOutput:(AVCaptureOutput *)captureOutput didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer fromConnection:(AVCaptureConnection *)connection
+- (void)captureOutput:(AVCaptureOutput *)captureOutput
+didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer
+       fromConnection:(AVCaptureConnection *)connection
 {
     if (_videoConnection == connection) {
         // NSLog(@"采集到视频数据");

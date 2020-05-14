@@ -1,0 +1,614 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		042830CC2465452900EC2067 /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 042830CB2465452900EC2067 /* ViewController2.m */; };
+		04304DE42463EC9300522EC9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04304DE32463EC9300522EC9 /* AppDelegate.m */; };
+		04304DE72463EC9300522EC9 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04304DE62463EC9300522EC9 /* SceneDelegate.m */; };
+		04304DEA2463EC9300522EC9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04304DE92463EC9300522EC9 /* ViewController.m */; };
+		04304DED2463EC9300522EC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04304DEB2463EC9300522EC9 /* Main.storyboard */; };
+		04304DEF2463EC9400522EC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04304DEE2463EC9400522EC9 /* Assets.xcassets */; };
+		04304DF22463EC9400522EC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04304DF02463EC9400522EC9 /* LaunchScreen.storyboard */; };
+		04304DF52463EC9400522EC9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04304DF42463EC9400522EC9 /* main.m */; };
+		04304DFF2463EC9400522EC9 /* AVCaptureDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04304DFE2463EC9400522EC9 /* AVCaptureDemoTests.m */; };
+		04304E0A2463EC9400522EC9 /* AVCaptureDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04304E092463EC9400522EC9 /* AVCaptureDemoUITests.m */; };
+		04304E192463F4E900522EC9 /* TLCameraTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 04304E182463F4E900522EC9 /* TLCameraTool.m */; };
+		04304E1C2463F50E00522EC9 /* TLPhotoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04304E1A2463F50E00522EC9 /* TLPhotoController.m */; };
+		04304E1F246406F200522EC9 /* TLMotionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04304E1E246406F200522EC9 /* TLMotionManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04304DFB2463EC9400522EC9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04304DD72463EC9300522EC9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04304DDE2463EC9300522EC9;
+			remoteInfo = AVCaptureDemo;
+		};
+		04304E062463EC9400522EC9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04304DD72463EC9300522EC9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04304DDE2463EC9300522EC9;
+			remoteInfo = AVCaptureDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		042830CA2465452900EC2067 /* ViewController2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
+		042830CB2465452900EC2067 /* ViewController2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
+		04304DDF2463EC9300522EC9 /* AVCaptureDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AVCaptureDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04304DE22463EC9300522EC9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		04304DE32463EC9300522EC9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		04304DE52463EC9300522EC9 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		04304DE62463EC9300522EC9 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		04304DE82463EC9300522EC9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		04304DE92463EC9300522EC9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		04304DEC2463EC9300522EC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04304DEE2463EC9400522EC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04304DF12463EC9400522EC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		04304DF32463EC9400522EC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04304DF42463EC9400522EC9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		04304DFA2463EC9400522EC9 /* AVCaptureDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AVCaptureDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04304DFE2463EC9400522EC9 /* AVCaptureDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVCaptureDemoTests.m; sourceTree = "<group>"; };
+		04304E002463EC9400522EC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04304E052463EC9400522EC9 /* AVCaptureDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AVCaptureDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04304E092463EC9400522EC9 /* AVCaptureDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVCaptureDemoUITests.m; sourceTree = "<group>"; };
+		04304E0B2463EC9400522EC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04304E172463F4E900522EC9 /* TLCameraTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLCameraTool.h; sourceTree = "<group>"; };
+		04304E182463F4E900522EC9 /* TLCameraTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLCameraTool.m; sourceTree = "<group>"; };
+		04304E1A2463F50E00522EC9 /* TLPhotoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLPhotoController.m; sourceTree = "<group>"; };
+		04304E1B2463F50E00522EC9 /* TLPhotoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLPhotoController.h; sourceTree = "<group>"; };
+		04304E1D246406F200522EC9 /* TLMotionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLMotionManager.h; sourceTree = "<group>"; };
+		04304E1E246406F200522EC9 /* TLMotionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLMotionManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04304DDC2463EC9300522EC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04304DF72463EC9400522EC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04304E022463EC9400522EC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04304DD62463EC9300522EC9 = {
+			isa = PBXGroup;
+			children = (
+				04304DE12463EC9300522EC9 /* AVCaptureDemo */,
+				04304DFD2463EC9400522EC9 /* AVCaptureDemoTests */,
+				04304E082463EC9400522EC9 /* AVCaptureDemoUITests */,
+				04304DE02463EC9300522EC9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		04304DE02463EC9300522EC9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04304DDF2463EC9300522EC9 /* AVCaptureDemo.app */,
+				04304DFA2463EC9400522EC9 /* AVCaptureDemoTests.xctest */,
+				04304E052463EC9400522EC9 /* AVCaptureDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04304DE12463EC9300522EC9 /* AVCaptureDemo */ = {
+			isa = PBXGroup;
+			children = (
+				04304DE22463EC9300522EC9 /* AppDelegate.h */,
+				04304DE32463EC9300522EC9 /* AppDelegate.m */,
+				04304DE52463EC9300522EC9 /* SceneDelegate.h */,
+				04304DE62463EC9300522EC9 /* SceneDelegate.m */,
+				04304DE82463EC9300522EC9 /* ViewController.h */,
+				04304DE92463EC9300522EC9 /* ViewController.m */,
+				042830CA2465452900EC2067 /* ViewController2.h */,
+				042830CB2465452900EC2067 /* ViewController2.m */,
+				04304E172463F4E900522EC9 /* TLCameraTool.h */,
+				04304E182463F4E900522EC9 /* TLCameraTool.m */,
+				04304E1B2463F50E00522EC9 /* TLPhotoController.h */,
+				04304E1A2463F50E00522EC9 /* TLPhotoController.m */,
+				04304E1D246406F200522EC9 /* TLMotionManager.h */,
+				04304E1E246406F200522EC9 /* TLMotionManager.m */,
+				04304DEB2463EC9300522EC9 /* Main.storyboard */,
+				04304DEE2463EC9400522EC9 /* Assets.xcassets */,
+				04304DF02463EC9400522EC9 /* LaunchScreen.storyboard */,
+				04304DF32463EC9400522EC9 /* Info.plist */,
+				04304DF42463EC9400522EC9 /* main.m */,
+			);
+			path = AVCaptureDemo;
+			sourceTree = "<group>";
+		};
+		04304DFD2463EC9400522EC9 /* AVCaptureDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				04304DFE2463EC9400522EC9 /* AVCaptureDemoTests.m */,
+				04304E002463EC9400522EC9 /* Info.plist */,
+			);
+			path = AVCaptureDemoTests;
+			sourceTree = "<group>";
+		};
+		04304E082463EC9400522EC9 /* AVCaptureDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				04304E092463EC9400522EC9 /* AVCaptureDemoUITests.m */,
+				04304E0B2463EC9400522EC9 /* Info.plist */,
+			);
+			path = AVCaptureDemoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04304DDE2463EC9300522EC9 /* AVCaptureDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04304E0E2463EC9400522EC9 /* Build configuration list for PBXNativeTarget "AVCaptureDemo" */;
+			buildPhases = (
+				04304DDB2463EC9300522EC9 /* Sources */,
+				04304DDC2463EC9300522EC9 /* Frameworks */,
+				04304DDD2463EC9300522EC9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AVCaptureDemo;
+			productName = AVCaptureDemo;
+			productReference = 04304DDF2463EC9300522EC9 /* AVCaptureDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		04304DF92463EC9400522EC9 /* AVCaptureDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04304E112463EC9400522EC9 /* Build configuration list for PBXNativeTarget "AVCaptureDemoTests" */;
+			buildPhases = (
+				04304DF62463EC9400522EC9 /* Sources */,
+				04304DF72463EC9400522EC9 /* Frameworks */,
+				04304DF82463EC9400522EC9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04304DFC2463EC9400522EC9 /* PBXTargetDependency */,
+			);
+			name = AVCaptureDemoTests;
+			productName = AVCaptureDemoTests;
+			productReference = 04304DFA2463EC9400522EC9 /* AVCaptureDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		04304E042463EC9400522EC9 /* AVCaptureDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04304E142463EC9400522EC9 /* Build configuration list for PBXNativeTarget "AVCaptureDemoUITests" */;
+			buildPhases = (
+				04304E012463EC9400522EC9 /* Sources */,
+				04304E022463EC9400522EC9 /* Frameworks */,
+				04304E032463EC9400522EC9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04304E072463EC9400522EC9 /* PBXTargetDependency */,
+			);
+			name = AVCaptureDemoUITests;
+			productName = AVCaptureDemoUITests;
+			productReference = 04304E052463EC9400522EC9 /* AVCaptureDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04304DD72463EC9300522EC9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = TLLTD;
+				TargetAttributes = {
+					04304DDE2463EC9300522EC9 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					04304DF92463EC9400522EC9 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 04304DDE2463EC9300522EC9;
+					};
+					04304E042463EC9400522EC9 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 04304DDE2463EC9300522EC9;
+					};
+				};
+			};
+			buildConfigurationList = 04304DDA2463EC9300522EC9 /* Build configuration list for PBXProject "AVCaptureDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04304DD62463EC9300522EC9;
+			productRefGroup = 04304DE02463EC9300522EC9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04304DDE2463EC9300522EC9 /* AVCaptureDemo */,
+				04304DF92463EC9400522EC9 /* AVCaptureDemoTests */,
+				04304E042463EC9400522EC9 /* AVCaptureDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04304DDD2463EC9300522EC9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04304DF22463EC9400522EC9 /* LaunchScreen.storyboard in Resources */,
+				04304DEF2463EC9400522EC9 /* Assets.xcassets in Resources */,
+				04304DED2463EC9300522EC9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04304DF82463EC9400522EC9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04304E032463EC9400522EC9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04304DDB2463EC9300522EC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04304DEA2463EC9300522EC9 /* ViewController.m in Sources */,
+				04304E1F246406F200522EC9 /* TLMotionManager.m in Sources */,
+				04304E1C2463F50E00522EC9 /* TLPhotoController.m in Sources */,
+				04304DE42463EC9300522EC9 /* AppDelegate.m in Sources */,
+				04304E192463F4E900522EC9 /* TLCameraTool.m in Sources */,
+				042830CC2465452900EC2067 /* ViewController2.m in Sources */,
+				04304DF52463EC9400522EC9 /* main.m in Sources */,
+				04304DE72463EC9300522EC9 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04304DF62463EC9400522EC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04304DFF2463EC9400522EC9 /* AVCaptureDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04304E012463EC9400522EC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04304E0A2463EC9400522EC9 /* AVCaptureDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04304DFC2463EC9400522EC9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04304DDE2463EC9300522EC9 /* AVCaptureDemo */;
+			targetProxy = 04304DFB2463EC9400522EC9 /* PBXContainerItemProxy */;
+		};
+		04304E072463EC9400522EC9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04304DDE2463EC9300522EC9 /* AVCaptureDemo */;
+			targetProxy = 04304E062463EC9400522EC9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		04304DEB2463EC9300522EC9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04304DEC2463EC9300522EC9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		04304DF02463EC9400522EC9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04304DF12463EC9400522EC9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04304E0C2463EC9400522EC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		04304E0D2463EC9400522EC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04304E0F2463EC9400522EC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LPF3349M6Q;
+				INFOPLIST_FILE = AVCaptureDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TLTech.AVCaptureDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		04304E102463EC9400522EC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LPF3349M6Q;
+				INFOPLIST_FILE = AVCaptureDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TLTech.AVCaptureDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		04304E122463EC9400522EC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LPF3349M6Q;
+				INFOPLIST_FILE = AVCaptureDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TLTech.AVCaptureDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AVCaptureDemo.app/AVCaptureDemo";
+			};
+			name = Debug;
+		};
+		04304E132463EC9400522EC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LPF3349M6Q;
+				INFOPLIST_FILE = AVCaptureDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TLTech.AVCaptureDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AVCaptureDemo.app/AVCaptureDemo";
+			};
+			name = Release;
+		};
+		04304E152463EC9400522EC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LPF3349M6Q;
+				INFOPLIST_FILE = AVCaptureDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TLTech.AVCaptureDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AVCaptureDemo;
+			};
+			name = Debug;
+		};
+		04304E162463EC9400522EC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LPF3349M6Q;
+				INFOPLIST_FILE = AVCaptureDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TLTech.AVCaptureDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AVCaptureDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04304DDA2463EC9300522EC9 /* Build configuration list for PBXProject "AVCaptureDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04304E0C2463EC9400522EC9 /* Debug */,
+				04304E0D2463EC9400522EC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04304E0E2463EC9400522EC9 /* Build configuration list for PBXNativeTarget "AVCaptureDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04304E0F2463EC9400522EC9 /* Debug */,
+				04304E102463EC9400522EC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04304E112463EC9400522EC9 /* Build configuration list for PBXNativeTarget "AVCaptureDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04304E122463EC9400522EC9 /* Debug */,
+				04304E132463EC9400522EC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04304E142463EC9400522EC9 /* Build configuration list for PBXNativeTarget "AVCaptureDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04304E152463EC9400522EC9 /* Debug */,
+				04304E162463EC9400522EC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04304DD72463EC9300522EC9 /* Project object */;
+}
