@@ -128,6 +128,7 @@
 - (AVCaptureDevice *)getVideoDevice:(AVCaptureDevicePosition)position
 {
     NSArray *devices = [AVCaptureDevice devicesWithMediaType:AVMediaTypeVideo];
+    
     for (AVCaptureDevice *device in devices) {
         if (device.position == position) {
             return device;
@@ -170,7 +171,7 @@ didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer
                 // 2.将数据长度 inter 转 NSData类型
                 NSData *lengthData = [NSData dataWithBytes:&datalength length:sizeof(datalength)];
                 
-                // 3.lengthData默认为8字节,这里需服务端需和客户端协商,我这里使用4字节来存储 数据长度
+                // 3.lengthData默认为8字节,这里服务端需和客户端协商,我这里使用4字节来存储 数据长度
                 NSData *newLengthData = [lengthData subdataWithRange: NSMakeRange(0, 4)];
                 
                 // 4.将数据长度转NSData后,拼接到每一帧前面,方便拆包
