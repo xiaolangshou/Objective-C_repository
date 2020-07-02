@@ -22,6 +22,7 @@
 		04CF875C24AD6F7C003C4AC5 /* TLAudioFileTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CF875424AD6F7C003C4AC5 /* TLAudioFileTool.m */; };
 		04CF875D24AD6F7C003C4AC5 /* TLAudioPlayerTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CF875724AD6F7C003C4AC5 /* TLAudioPlayerTool.m */; };
 		04CF875E24AD6F7C003C4AC5 /* TLAudioTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CF875924AD6F7C003C4AC5 /* TLAudioTool.m */; };
+		CF4E1A6924AE145400553335 /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4E1A6724AE145400553335 /* UIImage+Extension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,8 @@
 		04CF875824AD6F7C003C4AC5 /* TLSingle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLSingle.h; sourceTree = "<group>"; };
 		04CF875924AD6F7C003C4AC5 /* TLAudioTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLAudioTool.m; sourceTree = "<group>"; };
 		04CF875A24AD6F7C003C4AC5 /* TLRecorderKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLRecorderKit.h; sourceTree = "<group>"; };
+		CF4E1A6724AE145400553335 /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
+		CF4E1A6824AE145400553335 /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +136,8 @@
 				042B1FFB24AC8BCD0046F9A1 /* SceneDelegate.m */,
 				042B1FFD24AC8BCD0046F9A1 /* ViewController.h */,
 				042B1FFE24AC8BCD0046F9A1 /* ViewController.m */,
+				CF4E1A6824AE145400553335 /* UIImage+Extension.h */,
+				CF4E1A6724AE145400553335 /* UIImage+Extension.m */,
 				042B200024AC8BCD0046F9A1 /* Main.storyboard */,
 				042B200324AC8BCE0046F9A1 /* Assets.xcassets */,
 				042B200524AC8BCE0046F9A1 /* LaunchScreen.storyboard */,
@@ -323,6 +328,7 @@
 				04CF875B24AD6F7C003C4AC5 /* TLAudioFilePathTool.m in Sources */,
 				042B1FFF24AC8BCD0046F9A1 /* ViewController.m in Sources */,
 				042B1FF924AC8BCD0046F9A1 /* AppDelegate.m in Sources */,
+				CF4E1A6924AE145400553335 /* UIImage+Extension.m in Sources */,
 				042B200A24AC8BCE0046F9A1 /* main.m in Sources */,
 				04CF874124AD689D003C4AC5 /* JKLameTool.m in Sources */,
 				042B1FFC24AC8BCD0046F9A1 /* SceneDelegate.m in Sources */,
@@ -496,7 +502,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = M8ZMMX85YK;
+				DEVELOPMENT_TEAM = LPF3349M6Q;
 				INFOPLIST_FILE = AudioDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -517,7 +523,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = M8ZMMX85YK;
+				DEVELOPMENT_TEAM = LPF3349M6Q;
 				INFOPLIST_FILE = AudioDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
