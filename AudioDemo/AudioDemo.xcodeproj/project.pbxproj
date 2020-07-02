@@ -16,6 +16,12 @@
 		042B200A24AC8BCE0046F9A1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 042B200924AC8BCE0046F9A1 /* main.m */; };
 		042B201424AC8BCE0046F9A1 /* AudioDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 042B201324AC8BCE0046F9A1 /* AudioDemoTests.m */; };
 		042B201F24AC8BCE0046F9A1 /* AudioDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 042B201E24AC8BCE0046F9A1 /* AudioDemoUITests.m */; };
+		04CF874124AD689D003C4AC5 /* JKLameTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CF873D24AD689D003C4AC5 /* JKLameTool.m */; };
+		04CF874224AD689D003C4AC5 /* libmp3lame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04CF873E24AD689D003C4AC5 /* libmp3lame.a */; };
+		04CF875B24AD6F7C003C4AC5 /* TLAudioFilePathTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CF875324AD6F7C003C4AC5 /* TLAudioFilePathTool.m */; };
+		04CF875C24AD6F7C003C4AC5 /* TLAudioFileTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CF875424AD6F7C003C4AC5 /* TLAudioFileTool.m */; };
+		04CF875D24AD6F7C003C4AC5 /* TLAudioPlayerTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CF875724AD6F7C003C4AC5 /* TLAudioPlayerTool.m */; };
+		04CF875E24AD6F7C003C4AC5 /* TLAudioTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CF875924AD6F7C003C4AC5 /* TLAudioTool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +60,20 @@
 		042B201A24AC8BCE0046F9A1 /* AudioDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AudioDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		042B201E24AC8BCE0046F9A1 /* AudioDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioDemoUITests.m; sourceTree = "<group>"; };
 		042B202024AC8BCE0046F9A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04CF873D24AD689D003C4AC5 /* JKLameTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKLameTool.m; sourceTree = "<group>"; };
+		04CF873E24AD689D003C4AC5 /* libmp3lame.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmp3lame.a; sourceTree = "<group>"; };
+		04CF873F24AD689D003C4AC5 /* JKLameTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKLameTool.h; sourceTree = "<group>"; };
+		04CF874024AD689D003C4AC5 /* lame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lame.h; sourceTree = "<group>"; };
+		04CF875124AD6F7C003C4AC5 /* TLAudioTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLAudioTool.h; sourceTree = "<group>"; };
+		04CF875224AD6F7C003C4AC5 /* TLAudioFileTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLAudioFileTool.h; sourceTree = "<group>"; };
+		04CF875324AD6F7C003C4AC5 /* TLAudioFilePathTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLAudioFilePathTool.m; sourceTree = "<group>"; };
+		04CF875424AD6F7C003C4AC5 /* TLAudioFileTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLAudioFileTool.m; sourceTree = "<group>"; };
+		04CF875524AD6F7C003C4AC5 /* TLAudioFilePathTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLAudioFilePathTool.h; sourceTree = "<group>"; };
+		04CF875624AD6F7C003C4AC5 /* TLAudioPlayerTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLAudioPlayerTool.h; sourceTree = "<group>"; };
+		04CF875724AD6F7C003C4AC5 /* TLAudioPlayerTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLAudioPlayerTool.m; sourceTree = "<group>"; };
+		04CF875824AD6F7C003C4AC5 /* TLSingle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLSingle.h; sourceTree = "<group>"; };
+		04CF875924AD6F7C003C4AC5 /* TLAudioTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLAudioTool.m; sourceTree = "<group>"; };
+		04CF875A24AD6F7C003C4AC5 /* TLRecorderKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLRecorderKit.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04CF874224AD689D003C4AC5 /* libmp3lame.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +125,8 @@
 		042B1FF624AC8BCD0046F9A1 /* AudioDemo */ = {
 			isa = PBXGroup;
 			children = (
+				04CF875F24AD8063003C4AC5 /* TLKit */,
+				04CF873C24AD689D003C4AC5 /* lame */,
 				042B1FF724AC8BCD0046F9A1 /* AppDelegate.h */,
 				042B1FF824AC8BCD0046F9A1 /* AppDelegate.m */,
 				042B1FFA24AC8BCD0046F9A1 /* SceneDelegate.h */,
@@ -135,6 +158,34 @@
 				042B202024AC8BCE0046F9A1 /* Info.plist */,
 			);
 			path = AudioDemoUITests;
+			sourceTree = "<group>";
+		};
+		04CF873C24AD689D003C4AC5 /* lame */ = {
+			isa = PBXGroup;
+			children = (
+				04CF873E24AD689D003C4AC5 /* libmp3lame.a */,
+				04CF873D24AD689D003C4AC5 /* JKLameTool.m */,
+				04CF873F24AD689D003C4AC5 /* JKLameTool.h */,
+				04CF874024AD689D003C4AC5 /* lame.h */,
+			);
+			path = lame;
+			sourceTree = "<group>";
+		};
+		04CF875F24AD8063003C4AC5 /* TLKit */ = {
+			isa = PBXGroup;
+			children = (
+				04CF875524AD6F7C003C4AC5 /* TLAudioFilePathTool.h */,
+				04CF875324AD6F7C003C4AC5 /* TLAudioFilePathTool.m */,
+				04CF875224AD6F7C003C4AC5 /* TLAudioFileTool.h */,
+				04CF875424AD6F7C003C4AC5 /* TLAudioFileTool.m */,
+				04CF875624AD6F7C003C4AC5 /* TLAudioPlayerTool.h */,
+				04CF875724AD6F7C003C4AC5 /* TLAudioPlayerTool.m */,
+				04CF875124AD6F7C003C4AC5 /* TLAudioTool.h */,
+				04CF875924AD6F7C003C4AC5 /* TLAudioTool.m */,
+				04CF875A24AD6F7C003C4AC5 /* TLRecorderKit.h */,
+				04CF875824AD6F7C003C4AC5 /* TLSingle.h */,
+			);
+			path = TLKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,10 +318,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04CF875E24AD6F7C003C4AC5 /* TLAudioTool.m in Sources */,
+				04CF875D24AD6F7C003C4AC5 /* TLAudioPlayerTool.m in Sources */,
+				04CF875B24AD6F7C003C4AC5 /* TLAudioFilePathTool.m in Sources */,
 				042B1FFF24AC8BCD0046F9A1 /* ViewController.m in Sources */,
 				042B1FF924AC8BCD0046F9A1 /* AppDelegate.m in Sources */,
 				042B200A24AC8BCE0046F9A1 /* main.m in Sources */,
+				04CF874124AD689D003C4AC5 /* JKLameTool.m in Sources */,
 				042B1FFC24AC8BCD0046F9A1 /* SceneDelegate.m in Sources */,
+				04CF875C24AD6F7C003C4AC5 /* TLAudioFileTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,7 +431,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -427,7 +483,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -440,13 +496,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LPF3349M6Q;
+				DEVELOPMENT_TEAM = M8ZMMX85YK;
 				INFOPLIST_FILE = AudioDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = TLTech.AudioDemo;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AudioDemo/lame",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = weelink;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -457,13 +517,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LPF3349M6Q;
+				DEVELOPMENT_TEAM = M8ZMMX85YK;
 				INFOPLIST_FILE = AudioDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = TLTech.AudioDemo;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AudioDemo/lame",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = weelink;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

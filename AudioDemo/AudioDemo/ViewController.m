@@ -7,6 +7,9 @@
 //
 
 #import "ViewController.h"
+#import <AVFoundation/AVFoundation.h>
+#import "lame.h"
+#import "TLRecorderKit.h"
 
 @interface ViewController ()
 
@@ -17,7 +20,7 @@
 @property (nonatomic, strong) UIButton *stopBtn;
 @property (nonatomic, strong) UIButton *pauseBtn;
 @property (nonatomic, strong) UIButton *deleteBtn;
-@property (nonatomic, strong) UIButton *rerecordBtn;
+@property (nonatomic, strong) UIButton *playBtn;
 
 @end
 
@@ -25,8 +28,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    self.audioRecorder = [self audioRecorder];
+
     [self setupView];
 }
 
@@ -56,118 +58,48 @@
     [self.view addSubview:_deleteBtn];
     [_deleteBtn addTarget:self action:@selector(deleteBtnTapped) forControlEvents:UIControlEventTouchUpInside];
     
-    _rerecordBtn = [[UIButton alloc] initWithFrame:CGRectMake(10, 260, 60, 30)];
-    _rerecordBtn.backgroundColor = UIColor.cyanColor;
-    [_rerecordBtn setTitle:@"重录" forState:UIControlStateNormal];
-    [self.view addSubview:_rerecordBtn];
-    [_rerecordBtn addTarget:self action:@selector(rerecordBtnTapped) forControlEvents:UIControlEventTouchUpInside];
-    
+    _playBtn = [[UIButton alloc] initWithFrame:CGRectMake(10, 260, 60, 30)];
+    _playBtn.backgroundColor = UIColor.cyanColor;
+    [_playBtn setTitle:@"播放" forState:UIControlStateNormal];
+    [self.view addSubview:_playBtn];
+    [_playBtn addTarget:self action:@selector(playBtnTapped) forControlEvents:UIControlEventTouchUpInside];
 }
 
 - (void)startBtnTapped {
-    [self beginRecordWithRecordPath:_recordPath];
+    
+    NSLog(@"开始录音");
+    // 不同的文件格式，存放不同的编码数据，caf结尾的文件，基本上可以存放任何苹果支持的编码格式
+    [[TLAudioTool shareTLAudioTool] beginRecordWithRecordName:@"test"
+                                               withRecordType:@"caf"
+                                           withIsConventToMp3:YES];
 }
 
 - (void)stopBtnTapped {
-    [self endRecord];
+    
+    NSLog(@"停止录音");
+    [[TLAudioTool shareTLAudioTool] endRecord];
 }
 
 - (void)pauseBtnTapped {
-    [self pauseRecord];
+    
+    NSLog(@"暂停录音");
+    [[TLAudioTool shareTLAudioTool] pauseRecord];
 }
 
 - (void)deleteBtnTapped {
-    [self deleteRecord];
-}
-
-- (void)rerecordBtnTapped {
-    [self reRecord];
-}
-
-// 定义一个录音对象，懒加载
-- (AVAudioRecorder *)audioRecorder
-{
-    if (!_audioRecorder) {
-
-       // 0. 设置录音会话
-       /**
-         AVAudioSessionCategoryPlayAndRecord: 可以边播放边录音(也就是平时看到的背景音乐)
-        */
-       [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayAndRecord error:nil];
-       // 启动会话
-       [[AVAudioSession sharedInstance] setActive:YES error:nil];
-
-       // 1. 确定录音存放的位置
-       NSURL *url = [NSURL URLWithString:self.recordPath];
-
-       // 2. 设置录音参数
-       NSMutableDictionary *recordSettings = [[NSMutableDictionary alloc] init];
-       // 设置编码格式
-       /**
-         kAudioFormatLinearPCM: 无损压缩，内容非常大
-         kAudioFormatMPEG4AAC
-       */
-       [recordSettings setValue :[NSNumber numberWithInt: kAudioFormatLinearPCM] forKey: AVFormatIDKey];
-       // 采样率(通过测试的数据，根据公司的要求可以再去调整)，必须保证和转码设置的相同
-       [recordSettings setValue :[NSNumber numberWithFloat:11025.0] forKey: AVSampleRateKey];
-       // 通道数（必须设置为双声道, 不然转码生成的 MP3 会声音尖锐变声.）
-       [recordSettings setValue :[NSNumber numberWithInt:2] forKey: AVNumberOfChannelsKey];
-
-       //音频质量,采样质量(音频质量越高，文件的大小也就越大)
-       [recordSettings setValue:[NSNumber numberWithInt:AVAudioQualityMin] forKey:AVEncoderAudioQualityKey];
-
-       // 3. 创建录音对象
-       _audioRecorder = [[AVAudioRecorder alloc] initWithURL:url settings:recordSettings error:nil];
-       _audioRecorder.meteringEnabled = YES;
-     }
     
-   return _audioRecorder;
+    NSLog(@"删除录音");
+    [[TLAudioTool shareTLAudioTool] deleteRecord];
 }
 
-// 开始录音
-- (void)beginRecordWithRecordPath: (NSString *)recordPath {
-    // 记录录音地址
-    _recordPath = recordPath;
-    // 准备录音
-    [self.audioRecorder prepareToRecord];
-    // 开始录音
-    [self.audioRecorder record];
-}
-
-// 结束录音
-- (void)endRecord {
-     [self.audioRecorder stop];
-}
-
-// 暂停录音
-- (void)pauseRecord {
-    [self.audioRecorder pause];
-}
-
-// 删除录音
-- (void)deleteRecord {
-     [self.audioRecorder stop];
-     [self.audioRecorder deleteRecording];
-}
-
-// 重新录音
-- (void)reRecord {
-
-    self.audioRecorder = nil;
-    [self beginRecordWithRecordPath:self.recordPath];
-}
-
-// 更新音频测量值
-- (void)updateMeters
-{
-    [self.audioRecorder updateMeters];
-}
-
-// 获得指定声道的分贝峰值
-- (float)peakPowerForChannel0 {
-
-    [self.audioRecorder updateMeters];
-    return [self.audioRecorder peakPowerForChannel:0];
+- (void)playBtnTapped {
+    
+    NSLog(@"播放录音");
+    [[TLAudioPlayerTool shareTLAudioPlayerTool] playAudioWith: [cachesRecorderPath stringByAppendingPathComponent:@"test.mp3"]];
+    [TLAudioPlayerTool shareTLAudioPlayerTool].span = 0;
+    
+    NSLog(@"volum: %f", [TLAudioPlayerTool shareTLAudioPlayerTool].volumn);
+    NSLog(@"progress: %f", [TLAudioPlayerTool shareTLAudioPlayerTool].progress);
 }
 
 @end
