@@ -68,9 +68,11 @@
         [btn setTitle:@"开始" forState:UIControlStateNormal];
         
         NSLog(@"停止录音");
-        [[TLAudioTool shareTLAudioTool] endRecord];
         
-        [_indicator stopAnimating];
+        [self->_indicator stopAnimating];
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.6 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [[TLAudioTool shareTLAudioTool] endRecord];
+        });
     }
 }
 

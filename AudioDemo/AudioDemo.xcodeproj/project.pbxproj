@@ -512,7 +512,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/AudioDemo/lame",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = weelink;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.weelinktech.-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -533,7 +533,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/AudioDemo/lame",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = weelink;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.weelinktech.-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
