@@ -15,6 +15,8 @@
 @property (nonatomic, strong) UIButton *subscribeBtn;
 @property (nonatomic, strong) UIButton *sendBtn;
 @property (nonatomic, strong) UILabel *stateLbl;
+@property (nonatomic, strong) UILabel *subscriptionStatusLbl;
+@property (nonatomic, strong) UITextView *messagesLbl;
 
 @end
 
@@ -50,6 +52,13 @@
     self.stateLbl = [[UILabel alloc] initWithFrame:CGRectMake(20, 250, 300, 50)];
     self.stateLbl.backgroundColor = UIColor.lightTextColor;
     [self.view addSubview:self.stateLbl];
+    
+    self.messagesLbl = [[UITextView alloc] initWithFrame:CGRectMake(20, 320, 320, 100)];
+    [self.view addSubview:self.messagesLbl];
+    
+    self.subscriptionStatusLbl = [[UILabel alloc] initWithFrame:CGRectMake(20, 460, 100, 50)];
+    self.subscriptionStatusLbl.text = @"...";
+    [self.view addSubview:self.subscriptionStatusLbl];
 }
 
 - (void)subscribeBtnTapped {
@@ -85,7 +94,9 @@
           retained:(BOOL)retained
                mid:(unsigned int)mid
 {
-    
+    NSString *text = self.messagesLbl.text;
+    [text stringByAppendingString:(@"\n topic - \(topic!) data - \(data!)")];
+    self.messagesLbl.text = text;
 }
 
 - (void)handleEvent:(MQTTSession *)session event:(MQTTSessionEvent)eventCode error:(NSError *)error {
@@ -112,6 +123,18 @@
         default:
             break;
     }
+}
+
+- (void)subAckReceived:(MQTTSession *)session
+                 msgID:(UInt16)msgID
+           grantedQoss:(NSArray<NSNumber *> *)qoss
+{
+    self.subscriptionStatusLbl.text = @"Subscribed";
+}
+
+- (void)unsubAckReceived:(MQTTSession *)session msgID:(UInt16)msgID {
+    
+    self.subscriptionStatusLbl.text = @"Unsubscribed";
 }
 
 @end
