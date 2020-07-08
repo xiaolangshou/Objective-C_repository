@@ -145,6 +145,7 @@ SingletonM
     
     UInt32 bytesRead = 0;
     UInt32 numPackets = readPacketsNum;
+    
     OSStatus status = AudioFileReadPackets(m_playFile,
                                   false,
                                   &bytesRead,

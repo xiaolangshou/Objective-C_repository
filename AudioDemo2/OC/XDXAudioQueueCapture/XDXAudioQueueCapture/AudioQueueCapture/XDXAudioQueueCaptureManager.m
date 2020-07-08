@@ -89,13 +89,14 @@ static void CaptureAudioDataCallback(void *                                 inUs
         
         // Note: audioBufferSize couldn't more than durationSec max size.
         [self configureAudioCaptureWithAudioInfo:m_audioInfo
-                                        formatID:kAudioFormatMPEG4AAC // kAudioFormatLinearPCM
+                                        formatID:kAudioFormatLinearPCM // kAudioFormatMPEG4AAC
                                       sampleRate:44100
                                     channelCount:1
                                      durationSec:0.05
                                       bufferSize:1024
                                        isRunning:&self->_isRunning];
     });
+    
     return _instace;
 }
 
@@ -132,7 +133,7 @@ static void CaptureAudioDataCallback(void *                                 inUs
         dataFormat.mBitsPerChannel  = kXDXAudioPCMBitsPerChannel;
         dataFormat.mBytesPerPacket  = dataFormat.mBytesPerFrame = (dataFormat.mBitsPerChannel / 8) * dataFormat.mChannelsPerFrame;
         dataFormat.mFramesPerPacket = kXDXAudioPCMFramesPerPacket;
-    }else if (formatID == kAudioFormatMPEG4AAC) {
+    } else if (formatID == kAudioFormatMPEG4AAC) {
         dataFormat.mFormatFlags = kMPEG4Object_AAC_Main;
     }
 
@@ -166,7 +167,7 @@ static void CaptureAudioDataCallback(void *                                 inUs
     // 注意: 未压缩数据不需要PCM,可根据需求自行添加
     if (m_audioInfo->mDataFormat.mFormatID == kAudioFormatLinearPCM) {
         isNeedMagicCookie = NO;
-    }else {
+    } else {
         isNeedMagicCookie = YES;
     }
     [[XDXAudioFileHandler getInstance] startVoiceRecordByAudioQueue:m_audioInfo->mQueue
@@ -191,7 +192,14 @@ static void CaptureAudioDataCallback(void *                                 inUs
 }
 
 #pragma mark - Private
-- (void)configureAudioCaptureWithAudioInfo:(XDXRecorderInfoType)audioInfo formatID:(UInt32)formatID sampleRate:(Float64)sampleRate channelCount:(UInt32)channelCount durationSec:(float)durationSec bufferSize:(UInt32)bufferSize isRunning:(BOOL *)isRunning {
+- (void)configureAudioCaptureWithAudioInfo:(XDXRecorderInfoType)audioInfo
+                                  formatID:(UInt32)formatID
+                                sampleRate:(Float64)sampleRate
+                              channelCount:(UInt32)channelCount
+                               durationSec:(float)durationSec
+                                bufferSize:(UInt32)bufferSize
+                                 isRunning:(BOOL *)isRunning
+{
     // Get Audio format ASBD
     audioInfo->mDataFormat = [self getAudioFormatWithFormatID:formatID
                                                    sampleRate:sampleRate
@@ -228,7 +236,7 @@ static void CaptureAudioDataCallback(void *                                 inUs
     if (audioInfo->mDataFormat.mFormatID == kAudioFormatLinearPCM) {
         int frames = (int)ceil(durationSec * audioInfo->mDataFormat.mSampleRate);
         maxBufferByteSize = frames*audioInfo->mDataFormat.mBytesPerFrame*audioInfo->mDataFormat.mChannelsPerFrame;
-    }else {
+    } else {
         // AAC durationSec MIN: 23.219708 ms
         maxBufferByteSize = durationSec * audioInfo->mDataFormat.mSampleRate;
         

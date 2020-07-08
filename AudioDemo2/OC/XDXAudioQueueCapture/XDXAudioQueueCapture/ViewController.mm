@@ -7,11 +7,12 @@
 //
 
 #import "ViewController.h"
+#import "XDXQueueProcess.h"
 #import "XDXAudioFileHandler.h"
 #import "XDXAudioQueuePlayer.h"
-#import <AVFoundation/AVFoundation.h>
-#import "XDXQueueProcess.h"
 #import "XDXAudioQueueCaptureManager.h"
+
+#import <AVFoundation/AVFoundation.h>
 
 #define kXDXReadAudioPacketsNum 4096
 
@@ -25,6 +26,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    // This is only for the testPCM.caf file.
+    AudioStreamBasicDescription audioFormat = {
+        .mSampleRate         = 44100,
+        .mFormatID           = kAudioFormatLinearPCM,
+        .mChannelsPerFrame   = 1,
+        .mFormatFlags        = kLinearPCMFormatFlagIsSignedInteger | kLinearPCMFormatFlagIsPacked,
+        .mBitsPerChannel     = 16,
+        .mBytesPerPacket     = 2,
+        .mBytesPerFrame      = 2,
+        .mFramesPerPacket    = 1,
+    };
+    
+    // Configure Audio Queue Player
+    [[XDXAudioQueuePlayer getInstance] configureAudioPlayerWithAudioFormat:&audioFormat bufferSize:kXDXReadAudioPacketsNum * audioFormat.mBytesPerPacket];
     
     [[XDXAudioQueueCaptureManager getInstance] startAudioCapture];
 }
@@ -45,23 +61,9 @@
 #pragma mark - Button Action
 - (IBAction)startPlayDidClicked:(id)sender {
     
-    // This is only for the testPCM.caf file.
-    AudioStreamBasicDescription audioFormat = {
-        .mSampleRate         = 44100,
-        .mFormatID           = kAudioFormatLinearPCM,
-        .mChannelsPerFrame   = 1,
-        .mFormatFlags        = kLinearPCMFormatFlagIsSignedInteger | kLinearPCMFormatFlagIsPacked,
-        .mBitsPerChannel     = 16,
-        .mBytesPerPacket     = 2,
-        .mBytesPerFrame      = 2,
-        .mFramesPerPacket    = 1,
-    };
-    
-    // Configure Audio Queue Player
-    [[XDXAudioQueuePlayer getInstance] configureAudioPlayerWithAudioFormat:&audioFormat bufferSize:kXDXReadAudioPacketsNum * audioFormat.mBytesPerPacket];
-
     // Configure Audio File
     NSString *filePath = [XDXAudioFileHandler getInstance].recordFilePath;
+//    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"2020_07_08__13_52_29" ofType:@"caf"];
     XDXAudioFileHandler *fileHandler = [XDXAudioFileHandler getInstance];
     [fileHandler configurePlayFilePath:filePath];
     NSLog(@"filePath = %@", filePath);
