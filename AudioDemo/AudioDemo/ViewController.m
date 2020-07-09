@@ -81,6 +81,7 @@
     NSLog(@"播放录音");
     [[TLAudioPlayerTool shareTLAudioPlayerTool] playAudioWith: [cachesRecorderPath stringByAppendingPathComponent:@"test.mp3"]];
     [TLAudioPlayerTool shareTLAudioPlayerTool].span = 0;
+    [[TLAudioPlayerTool shareTLAudioPlayerTool] setVolumn:1.0];
     
     NSLog(@"volum: %f", [TLAudioPlayerTool shareTLAudioPlayerTool].volumn);
     NSLog(@"progress: %f", [TLAudioPlayerTool shareTLAudioPlayerTool].progress);

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,7 @@
 		0418EB9324AF07F00011DFF1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0418EB9224AF07F00011DFF1 /* main.m */; };
 		0418EB9D24AF07F10011DFF1 /* MQTTDemo2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0418EB9C24AF07F10011DFF1 /* MQTTDemo2Tests.m */; };
 		0418EBA824AF07F10011DFF1 /* MQTTDemo2UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0418EBA724AF07F10011DFF1 /* MQTTDemo2UITests.m */; };
+		04AB94B424B730360064E654 /* 111.png in Resources */ = {isa = PBXBuildFile; fileRef = 04AB94B324B730360064E654 /* 111.png */; };
 		10742A2D1F876E44396CE4F6 /* Pods_MQTTDemo2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9799108CB48B3C49C59C6F35 /* Pods_MQTTDemo2.framework */; };
 		17BE8FD73E2F9F7FA442E534 /* Pods_MQTTDemo2_MQTTDemo2UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C05F347EC721B1AAB598401 /* Pods_MQTTDemo2_MQTTDemo2UITests.framework */; };
 		869EE3DA47CE0AFC42E0A113 /* Pods_MQTTDemo2Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDBB4C84D58A8A97FFEF8BD6 /* Pods_MQTTDemo2Tests.framework */; };
@@ -57,6 +58,7 @@
 		0418EBA324AF07F10011DFF1 /* MQTTDemo2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MQTTDemo2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0418EBA724AF07F10011DFF1 /* MQTTDemo2UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MQTTDemo2UITests.m; sourceTree = "<group>"; };
 		0418EBA924AF07F10011DFF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04AB94B324B730360064E654 /* 111.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 111.png; sourceTree = "<group>"; };
 		0C05F347EC721B1AAB598401 /* Pods_MQTTDemo2_MQTTDemo2UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MQTTDemo2_MQTTDemo2UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		31358CE3B56073155363D471 /* Pods-MQTTDemo2Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MQTTDemo2Tests.release.xcconfig"; path = "Target Support Files/Pods-MQTTDemo2Tests/Pods-MQTTDemo2Tests.release.xcconfig"; sourceTree = "<group>"; };
 		71BC0793DA93601D2C1252A4 /* Pods-MQTTDemo2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MQTTDemo2.release.xcconfig"; path = "Target Support Files/Pods-MQTTDemo2/Pods-MQTTDemo2.release.xcconfig"; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 		0418EB7F24AF07EF0011DFF1 /* MQTTDemo2 */ = {
 			isa = PBXGroup;
 			children = (
+				04AB94B324B730360064E654 /* 111.png */,
 				0418EB8024AF07EF0011DFF1 /* AppDelegate.h */,
 				0418EB8124AF07EF0011DFF1 /* AppDelegate.m */,
 				0418EB8324AF07EF0011DFF1 /* SceneDelegate.h */,
@@ -164,7 +167,6 @@
 				BEBD7A8DF2733F532638B021 /* Pods-MQTTDemo2Tests.debug.xcconfig */,
 				31358CE3B56073155363D471 /* Pods-MQTTDemo2Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -287,6 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0418EB9024AF07F00011DFF1 /* LaunchScreen.storyboard in Resources */,
+				04AB94B424B730360064E654 /* 111.png in Resources */,
 				0418EB8D24AF07F00011DFF1 /* Assets.xcassets in Resources */,
 				0418EB8B24AF07EF0011DFF1 /* Main.storyboard in Resources */,
 			);

@@ -51,7 +51,9 @@ TLSingleM(TLAudioTool)
         /**
          AVAudioSessionCategoryPlayAndRecord: 可以边播放边录音(也就是平时看到的背景音乐)
          */
-        [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayAndRecord error:nil];
+        [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayAndRecord
+                                         withOptions:AVAudioSessionCategoryOptionDefaultToSpeaker
+                                               error:nil];
         // 启动会话
         [[AVAudioSession sharedInstance] setActive:YES error:nil];
         

@@ -104,7 +104,7 @@ static void CaptureAudioDataCallback(void *                                 inUs
     return [[self alloc] init];
 }
 
--(AudioStreamBasicDescription)getAudioFormatWithFormatID:(UInt32)formatID sampleRate:(Float64)sampleRate channelCount:(UInt32)channelCount {
+- (AudioStreamBasicDescription)getAudioFormatWithFormatID:(UInt32)formatID sampleRate:(Float64)sampleRate channelCount:(UInt32)channelCount {
     AudioStreamBasicDescription dataFormat = {0};
     
     UInt32 size = sizeof(dataFormat.mSampleRate);
@@ -207,6 +207,10 @@ static void CaptureAudioDataCallback(void *                                 inUs
     
     // Set sample time
     [[AVAudioSession sharedInstance] setPreferredIOBufferDuration:durationSec error:NULL];
+    //This ensures it plays properly on speaker output
+    [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayAndRecord
+                                     withOptions:AVAudioSessionCategoryOptionDefaultToSpeaker
+                                           error:nil];
     
     // New queue
     OSStatus status = AudioQueueNewInput(&audioInfo->mDataFormat,

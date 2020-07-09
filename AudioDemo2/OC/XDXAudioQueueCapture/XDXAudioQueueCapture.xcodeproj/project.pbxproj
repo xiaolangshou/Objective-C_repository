@@ -7,12 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		04941E4A24B5976400FC8E7D /* 2020_07_08__13_52_29.caf in Resources */ = {isa = PBXBuildFile; fileRef = 04941E4924B5975000FC8E7D /* 2020_07_08__13_52_29.caf */; };
 		04F3500524B4026700096AD1 /* XDXQueueProcess.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04F3500324B4026700096AD1 /* XDXQueueProcess.mm */; };
 		04F3500A24B4215900096AD1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F3500924B4215900096AD1 /* UIKit.framework */; };
 		04F3500C24B4218E00096AD1 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F3500B24B4218E00096AD1 /* AVFoundation.framework */; };
-		04F3500D24B429A300096AD1 /* testPCM.caf in Resources */ = {isa = PBXBuildFile; fileRef = 2330D3842285BDDD00283AF7 /* testPCM.caf */; };
-		04F3500E24B429A600096AD1 /* 2019_05_10__22_08_19.caf in Resources */ = {isa = PBXBuildFile; fileRef = 2330D3832285BDDD00283AF7 /* 2019_05_10__22_08_19.caf */; };
 		230D46F8227C6D8200EA8C90 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 230D46F7227C6D8200EA8C90 /* AppDelegate.m */; };
 		230D46FB227C6D8200EA8C90 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 230D46FA227C6D8200EA8C90 /* ViewController.mm */; };
 		230D46FE227C6D8200EA8C90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 230D46FC227C6D8200EA8C90 /* Main.storyboard */; };
@@ -26,7 +23,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		04941E4924B5975000FC8E7D /* 2020_07_08__13_52_29.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = 2020_07_08__13_52_29.caf; sourceTree = "<group>"; };
 		04F3500324B4026700096AD1 /* XDXQueueProcess.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = XDXQueueProcess.mm; sourceTree = "<group>"; };
 		04F3500424B4026700096AD1 /* XDXQueueProcess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDXQueueProcess.h; sourceTree = "<group>"; };
 		04F3500924B4215900096AD1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -46,8 +42,6 @@
 		230D4715227C72A200EA8C90 /* XDXAudioQueueCaptureManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XDXAudioQueueCaptureManager.m; sourceTree = "<group>"; };
 		230D471A227C8B4700EA8C90 /* XDXAudioFileHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XDXAudioFileHandler.h; sourceTree = "<group>"; };
 		230D471B227C8B4700EA8C90 /* XDXAudioFileHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XDXAudioFileHandler.m; sourceTree = "<group>"; };
-		2330D3832285BDDD00283AF7 /* 2019_05_10__22_08_19.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = 2019_05_10__22_08_19.caf; sourceTree = "<group>"; };
-		2330D3842285BDDD00283AF7 /* testPCM.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = testPCM.caf; sourceTree = "<group>"; };
 		CF1ABAC124B346D100BCD062 /* log4cplus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = log4cplus.h; sourceTree = "<group>"; };
 		CF1ABAC224B346D100BCD062 /* XDXSingleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XDXSingleton.h; sourceTree = "<group>"; };
 		CF1ABAC524B3484900BCD062 /* XDXAudioQueuePlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDXAudioQueuePlayer.h; sourceTree = "<group>"; };
@@ -102,9 +96,6 @@
 				230D4701227C6D8400EA8C90 /* LaunchScreen.storyboard */,
 				230D4704227C6D8400EA8C90 /* Info.plist */,
 				230D4705227C6D8400EA8C90 /* main.m */,
-				2330D3842285BDDD00283AF7 /* testPCM.caf */,
-				2330D3832285BDDD00283AF7 /* 2019_05_10__22_08_19.caf */,
-				04941E4924B5975000FC8E7D /* 2020_07_08__13_52_29.caf */,
 			);
 			path = XDXAudioQueueCapture;
 			sourceTree = "<group>";
@@ -221,9 +212,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04941E4A24B5976400FC8E7D /* 2020_07_08__13_52_29.caf in Resources */,
-				04F3500E24B429A600096AD1 /* 2019_05_10__22_08_19.caf in Resources */,
-				04F3500D24B429A300096AD1 /* testPCM.caf in Resources */,
 				230D4703227C6D8400EA8C90 /* LaunchScreen.storyboard in Resources */,
 				230D4700227C6D8400EA8C90 /* Assets.xcassets in Resources */,
 				230D46FE227C6D8200EA8C90 /* Main.storyboard in Resources */,

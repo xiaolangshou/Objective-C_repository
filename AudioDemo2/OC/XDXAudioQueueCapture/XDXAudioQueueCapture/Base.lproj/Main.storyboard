@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -15,69 +14,7 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mn3-U6-CZP">
-                                <rect key="frame" x="132" y="107" width="150" height="50"/>
-                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="3YM-ji-OVT"/>
-                                    <constraint firstAttribute="width" constant="150" id="ekW-zT-N4K"/>
-                                </constraints>
-                                <state key="normal" title="Start Record"/>
-                                <connections>
-                                    <action selector="startRecord:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YA6-vv-zAw"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sln-Bu-0m4">
-                                <rect key="frame" x="132" y="207" width="150" height="50"/>
-                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="BO0-f8-29N"/>
-                                    <constraint firstAttribute="width" constant="150" id="ngw-31-1sZ"/>
-                                </constraints>
-                                <state key="normal" title="Stop Record"/>
-                                <connections>
-                                    <action selector="stopRecord:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f32-Kd-5V7"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zOY-KK-4us">
-                                <rect key="frame" x="132" y="423" width="150" height="50"/>
-                                <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="X4H-rn-Tg6"/>
-                                    <constraint firstAttribute="height" constant="50" id="oV5-8g-Qj6"/>
-                                </constraints>
-                                <state key="normal" title="Stop Play"/>
-                                <connections>
-                                    <action selector="stopPlayDidClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gL5-1U-zFJ"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qxl-c2-hjd">
-                                <rect key="frame" x="132" y="317" width="150" height="50"/>
-                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="j7A-pO-8dI"/>
-                                    <constraint firstAttribute="width" constant="150" id="ySx-hv-1Ko"/>
-                                </constraints>
-                                <state key="normal" title="Start Play"/>
-                                <connections>
-                                    <action selector="startPlayDidClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uih-1b-Cpe"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="zOY-KK-4us" firstAttribute="top" secondItem="qxl-c2-hjd" secondAttribute="bottom" constant="56" id="7ss-vQ-8fH"/>
-                            <constraint firstItem="Sln-Bu-0m4" firstAttribute="top" secondItem="mn3-U6-CZP" secondAttribute="bottom" constant="50" id="H93-ZL-OVv"/>
-                            <constraint firstItem="Sln-Bu-0m4" firstAttribute="height" secondItem="mn3-U6-CZP" secondAttribute="height" id="JEa-HB-tCc"/>
-                            <constraint firstItem="qxl-c2-hjd" firstAttribute="top" secondItem="Sln-Bu-0m4" secondAttribute="bottom" constant="60" id="MRf-6N-hze"/>
-                            <constraint firstItem="mn3-U6-CZP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="63" id="TtT-5R-5fL"/>
-                            <constraint firstItem="qxl-c2-hjd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="132" id="c4I-3a-Je8"/>
-                            <constraint firstItem="Sln-Bu-0m4" firstAttribute="width" secondItem="mn3-U6-CZP" secondAttribute="width" id="epL-jP-zOz"/>
-                            <constraint firstItem="zOY-KK-4us" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="132" id="gI6-qX-Iaa"/>
-                            <constraint firstItem="Sln-Bu-0m4" firstAttribute="centerX" secondItem="mn3-U6-CZP" secondAttribute="centerX" id="jtb-99-BL8"/>
-                            <constraint firstItem="mn3-U6-CZP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pFf-cI-guU"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>

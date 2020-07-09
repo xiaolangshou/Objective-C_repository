@@ -26,8 +26,8 @@
     [super viewDidLoad];
     
     MQTTCFSocketTransport *transport = [[MQTTCFSocketTransport alloc] init];
-    transport.host = @"192.168.1.34";
-    transport.port = 8083;
+    transport.host = @"10.161.222.114";
+    transport.port = 1883;
         
     self.session = [[MQTTSession alloc] init];
     self.session.delegate = self;
@@ -55,9 +55,11 @@
     
     self.messagesLbl = [[UITextView alloc] initWithFrame:CGRectMake(20, 320, 320, 100)];
     [self.view addSubview:self.messagesLbl];
+    self.messagesLbl.backgroundColor = UIColor.systemGroupedBackgroundColor;
     
     self.subscriptionStatusLbl = [[UILabel alloc] initWithFrame:CGRectMake(20, 460, 100, 50)];
     self.subscriptionStatusLbl.text = @"...";
+    self.subscriptionStatusLbl.backgroundColor = UIColor.systemGroupedBackgroundColor;
     [self.view addSubview:self.subscriptionStatusLbl];
 }
 
@@ -74,7 +76,8 @@
 
 - (void)sendBtnTapped {
     
-    NSString *str = @"ni hao ma";
+    NSString *str = @"asdfjasdlfkjsdlkfsdlfkjzhong";
+    //NSData *data = UIImagePNGRepresentation([UIImage imageNamed:@"111"]);
     
     [self.session publishData: [str dataUsingEncoding:NSUTF8StringEncoding]
                       onTopic:@"testtopic"
@@ -94,9 +97,10 @@
           retained:(BOOL)retained
                mid:(unsigned int)mid
 {
-    NSString *text = self.messagesLbl.text;
-    [text stringByAppendingString:(@"\n topic - \(topic!) data - \(data!)")];
-    self.messagesLbl.text = text;
+    
+    NSLog(@"topic = %@", topic);
+    NSLog(@"data = %@", [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]);
+    self.messagesLbl.text = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
 }
 
 - (void)handleEvent:(MQTTSession *)session event:(MQTTSessionEvent)eventCode error:(NSError *)error {
@@ -104,6 +108,7 @@
     switch (eventCode) {
         case MQTTSessionEventConnected:
             self.stateLbl.text = @"Connected";
+            self.messagesLbl.text = @"";
             break;
         case MQTTSessionEventConnectionClosed:
             self.stateLbl.text = @"Closed";

@@ -19,6 +19,8 @@
 @interface ViewController ()
 
 @property (nonatomic, assign) BOOL isStopPlay;
+@property (nonatomic, strong) UIButton *recordBtn;
+@property (nonatomic, strong) UIButton *playBtn;
 
 @end
 
@@ -27,7 +29,59 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // This is only for the testPCM.caf file.
+    [self configAudioQueuePlayer];
+    [self startAudioCapture];
+    [self setupUI];
+}
+
+- (void)dealloc {
+    [[XDXAudioQueueCaptureManager getInstance] stopAudioCapture];
+}
+
+- (void)setupUI {
+    
+    _recordBtn = [[UIButton alloc] initWithFrame:CGRectMake(self.view.center.x - 30, 150, 60, 60)];
+    [self.view addSubview:_recordBtn];
+    _recordBtn.layer.cornerRadius = 30;
+    [_recordBtn setBackgroundImage:[UIImage imageNamed:@"icon_recored_audio_pre"] forState:UIControlStateNormal];
+    [_recordBtn addTarget:self action:@selector(recordBtnTapped:) forControlEvents:UIControlEventTouchUpInside];
+    
+    _playBtn = [[UIButton alloc] initWithFrame:CGRectMake(self.view.center.x - 28, 240, 56, 56)];
+    [self.view addSubview:_playBtn];
+    _playBtn.layer.cornerRadius = 30;
+    [_playBtn setBackgroundImage:[UIImage imageNamed:@"icon_record_play"] forState:UIControlStateNormal];
+    [_playBtn addTarget:self action:@selector(playBtnTapped:) forControlEvents:UIControlEventTouchUpInside];
+}
+
+- (void)recordBtnTapped: (UIButton *)btn {
+
+    [btn setSelected:!btn.isSelected];
+    
+    if (btn.isSelected) {
+        [btn setBackgroundImage:[UIImage imageNamed:@"icon_recored_audio"] forState:UIControlStateNormal];
+        [[XDXAudioQueueCaptureManager getInstance] startRecordFile];
+
+    } else {
+        [btn setBackgroundImage:[UIImage imageNamed:@"icon_recored_audio_pre"] forState:UIControlStateNormal];
+        [[XDXAudioQueueCaptureManager getInstance] stopRecordFile];
+    }
+}
+
+- (void)playBtnTapped: (UIButton *)btn {
+
+    [btn setSelected:!btn.isSelected];
+    
+    if (btn.isSelected) {
+        [btn setBackgroundImage:[UIImage imageNamed:@"icon_record_stop"] forState:UIControlStateNormal];
+        [self startPlay];
+    } else {
+        [btn setBackgroundImage:[UIImage imageNamed:@"icon_record_play"] forState:UIControlStateNormal];
+        [self stopPlay];
+    }
+}
+
+- (void)configAudioQueuePlayer {
+    
     AudioStreamBasicDescription audioFormat = {
         .mSampleRate         = 44100,
         .mFormatID           = kAudioFormatLinearPCM,
@@ -41,38 +95,28 @@
     
     // Configure Audio Queue Player
     [[XDXAudioQueuePlayer getInstance] configureAudioPlayerWithAudioFormat:&audioFormat bufferSize:kXDXReadAudioPacketsNum * audioFormat.mBytesPerPacket];
+}
+
+- (void)startAudioCapture {
     
     [[XDXAudioQueueCaptureManager getInstance] startAudioCapture];
 }
 
-- (void)dealloc {
-    [[XDXAudioQueueCaptureManager getInstance] stopAudioCapture];
-}
-
-- (IBAction)startRecord:(id)sender {
-    
-    [[XDXAudioQueueCaptureManager getInstance] startRecordFile];
-}
-
-- (IBAction)stopRecord:(id)sender {
-    [[XDXAudioQueueCaptureManager getInstance] stopRecordFile];
-}
-
-#pragma mark - Button Action
-- (IBAction)startPlayDidClicked:(id)sender {
+- (void)startPlay {
     
     // Configure Audio File
     NSString *filePath = [XDXAudioFileHandler getInstance].recordFilePath;
-//    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"2020_07_08__13_52_29" ofType:@"caf"];
     XDXAudioFileHandler *fileHandler = [XDXAudioFileHandler getInstance];
     [fileHandler configurePlayFilePath:filePath];
     NSLog(@"filePath = %@", filePath);
 
     [self putAudioDataIntoDataQueue];
     [[XDXAudioQueuePlayer getInstance] startAudioPlayer];
+    
+    self.isStopPlay = NO;
 }
 
-- (IBAction)stopPlayDidClicked:(id)sender {
+- (void)stopPlay {
     
     [[XDXAudioQueuePlayer getInstance] stopAudioPlayer];
     self.isStopPlay = YES;
@@ -88,7 +132,6 @@
     if (@available(iOS 10.0, *)) {
         [NSTimer scheduledTimerWithTimeInterval:0.09 repeats:YES block:^(NSTimer * _Nonnull timer) {
             if (self.isStopPlay) {
-                self.isStopPlay = NO;
                 [timer invalidate];
                 [[XDXAudioFileHandler getInstance] resetFileForPlay];
                 XDXCustomQueueProcess *audioBufferQueue =  [XDXAudioQueuePlayer getInstance]->_audioBufferQueue;
