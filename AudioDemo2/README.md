@@ -1,2 +1,2 @@
 # XDXAudioQueueCapture
-iOS: Audio Capture - Base on Audio Queue 
+iOS: 使用Audio Capture 实现录音和播放
