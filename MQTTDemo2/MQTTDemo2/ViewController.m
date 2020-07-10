@@ -77,7 +77,7 @@
 - (void)sendBtnTapped {
     
     NSString *str = @"Hello world！";
-    //NSData *data = UIImagePNGRepresentation([UIImage imageNamed:@"111"]);
+//    NSData *data = UIImagePNGRepresentation([UIImage imageNamed:@"111"]);
     
     [self.session publishData: [str dataUsingEncoding:NSUTF8StringEncoding]
                       onTopic:@"testtopic"
