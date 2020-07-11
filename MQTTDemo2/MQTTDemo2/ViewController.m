@@ -26,7 +26,7 @@
     [super viewDidLoad];
     
     MQTTCFSocketTransport *transport = [[MQTTCFSocketTransport alloc] init];
-    transport.host = @"10.161.222.114";
+    transport.host = @"192.168.1.125"/*@"10.161.222.114"*/;
     transport.port = 1883;
         
     self.session = [[MQTTSession alloc] init];
@@ -76,10 +76,10 @@
 
 - (void)sendBtnTapped {
     
-    NSString *str = @"Hello world！";
-//    NSData *data = UIImagePNGRepresentation([UIImage imageNamed:@"111"]);
+//    NSString *str = @"Hello world！";
+    NSData *data = UIImagePNGRepresentation([UIImage imageNamed:@"111"]);
     
-    [self.session publishData: [str dataUsingEncoding:NSUTF8StringEncoding]
+    [self.session publishData:data/* [str dataUsingEncoding:NSUTF8StringEncoding]*/
                       onTopic:@"testtopic"
                        retain:NO
                           qos:MQTTQosLevelAtMostOnce

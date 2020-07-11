@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04196A9324B9473A001249B9 /* CameraModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04196A9224B9473A001249B9 /* CameraModel.m */; };
+		04196A9624B94864001249B9 /* CameraHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 04196A9524B94864001249B9 /* CameraHandler.m */; };
+		04196A9A24B9672A001249B9 /* AdjustFocusView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04196A9924B9672A001249B9 /* AdjustFocusView.m */; };
 		CF8726882462FDDD00071B21 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8726872462FDDD00071B21 /* AppDelegate.m */; };
 		CF87268B2462FDDD00071B21 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF87268A2462FDDD00071B21 /* SceneDelegate.m */; };
 		CF87268E2462FDDD00071B21 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF87268D2462FDDD00071B21 /* ViewController.m */; };
@@ -38,6 +41,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04196A9124B9473A001249B9 /* CameraModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CameraModel.h; sourceTree = "<group>"; };
+		04196A9224B9473A001249B9 /* CameraModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraModel.m; sourceTree = "<group>"; };
+		04196A9424B94864001249B9 /* CameraHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CameraHandler.h; sourceTree = "<group>"; };
+		04196A9524B94864001249B9 /* CameraHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraHandler.m; sourceTree = "<group>"; };
+		04196A9724B94C34001249B9 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		04196A9824B9672A001249B9 /* AdjustFocusView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdjustFocusView.h; sourceTree = "<group>"; };
+		04196A9924B9672A001249B9 /* AdjustFocusView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdjustFocusView.m; sourceTree = "<group>"; };
 		CF8726832462FDDD00071B21 /* AVCaptureSessionDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AVCaptureSessionDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF8726862462FDDD00071B21 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CF8726872462FDDD00071B21 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -112,11 +122,18 @@
 			isa = PBXGroup;
 			children = (
 				CF8726862462FDDD00071B21 /* AppDelegate.h */,
+				04196A9724B94C34001249B9 /* PrefixHeader.pch */,
 				CF8726872462FDDD00071B21 /* AppDelegate.m */,
 				CF8726892462FDDD00071B21 /* SceneDelegate.h */,
 				CF87268A2462FDDD00071B21 /* SceneDelegate.m */,
+				04196A9824B9672A001249B9 /* AdjustFocusView.h */,
+				04196A9924B9672A001249B9 /* AdjustFocusView.m */,
 				CF87268C2462FDDD00071B21 /* ViewController.h */,
 				CF87268D2462FDDD00071B21 /* ViewController.m */,
+				04196A9124B9473A001249B9 /* CameraModel.h */,
+				04196A9224B9473A001249B9 /* CameraModel.m */,
+				04196A9424B94864001249B9 /* CameraHandler.h */,
+				04196A9524B94864001249B9 /* CameraHandler.m */,
 				CF87268F2462FDDD00071B21 /* Main.storyboard */,
 				CF8726922462FDE300071B21 /* Assets.xcassets */,
 				CF8726942462FDE300071B21 /* LaunchScreen.storyboard */,
@@ -284,6 +301,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF87268E2462FDDD00071B21 /* ViewController.m in Sources */,
+				04196A9624B94864001249B9 /* CameraHandler.m in Sources */,
+				04196A9A24B9672A001249B9 /* AdjustFocusView.m in Sources */,
+				04196A9324B9473A001249B9 /* CameraModel.m in Sources */,
 				CF8726882462FDDD00071B21 /* AppDelegate.m in Sources */,
 				CF8726992462FDE300071B21 /* main.m in Sources */,
 				CF87268B2462FDDD00071B21 /* SceneDelegate.m in Sources */,
@@ -457,6 +477,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LPF3349M6Q;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "/Users/mac/Objective-C_repository/AVCaptureSessionDemo/AVCaptureSessionDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = AVCaptureSessionDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -474,6 +496,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LPF3349M6Q;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "/Users/mac/Objective-C_repository/AVCaptureSessionDemo/AVCaptureSessionDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = AVCaptureSessionDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
