@@ -3,22 +3,4 @@
    uuid = "0576ECDA-C5FD-41E7-BF40-0A6563AB8F40"
    type = "1"
    version = "2.0">
-   <Breakpoints>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "52747025-DAE2-4E12-B9D1-698E6C5F997F"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "XDXAudioQueueCapture/AudioFile/XDXAudioFileHandler.m"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "18"
-            endingLineNumber = "18"
-            landmarkName = "XDXAudioFileHandler()"
-            landmarkType = "2">
-         </BreakpointContent>
-      </BreakpointProxy>
-   </Breakpoints>
 </Bucket>

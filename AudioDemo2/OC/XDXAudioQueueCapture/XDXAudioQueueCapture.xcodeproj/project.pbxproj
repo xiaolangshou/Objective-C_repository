@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		04F3500524B4026700096AD1 /* XDXQueueProcess.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04F3500324B4026700096AD1 /* XDXQueueProcess.mm */; };
+		04F3500524B4026700096AD1 /* QueueProcess.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04F3500324B4026700096AD1 /* QueueProcess.mm */; };
 		04F3500A24B4215900096AD1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F3500924B4215900096AD1 /* UIKit.framework */; };
 		04F3500C24B4218E00096AD1 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F3500B24B4218E00096AD1 /* AVFoundation.framework */; };
 		230D46F8227C6D8200EA8C90 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 230D46F7227C6D8200EA8C90 /* AppDelegate.m */; };
@@ -17,14 +17,14 @@
 		230D4703227C6D8400EA8C90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 230D4701227C6D8400EA8C90 /* LaunchScreen.storyboard */; };
 		230D4706227C6D8400EA8C90 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 230D4705227C6D8400EA8C90 /* main.m */; };
 		230D4713227C71CB00EA8C90 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 230D4712227C71CB00EA8C90 /* AudioToolbox.framework */; };
-		230D4716227C72A200EA8C90 /* XDXAudioQueueCaptureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 230D4715227C72A200EA8C90 /* XDXAudioQueueCaptureManager.m */; };
-		230D471C227C8B4700EA8C90 /* XDXAudioFileHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 230D471B227C8B4700EA8C90 /* XDXAudioFileHandler.m */; };
-		CF1ABAC724B3484900BCD062 /* XDXAudioQueuePlayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = CF1ABAC624B3484900BCD062 /* XDXAudioQueuePlayer.mm */; };
+		230D4716227C72A200EA8C90 /* AudioQueueCaptureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 230D4715227C72A200EA8C90 /* AudioQueueCaptureManager.m */; };
+		230D471C227C8B4700EA8C90 /* AudioFileHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 230D471B227C8B4700EA8C90 /* AudioFileHandler.m */; };
+		CF1ABAC724B3484900BCD062 /* AudioQueuePlayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = CF1ABAC624B3484900BCD062 /* AudioQueuePlayer.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		04F3500324B4026700096AD1 /* XDXQueueProcess.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = XDXQueueProcess.mm; sourceTree = "<group>"; };
-		04F3500424B4026700096AD1 /* XDXQueueProcess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDXQueueProcess.h; sourceTree = "<group>"; };
+		04F3500324B4026700096AD1 /* QueueProcess.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = QueueProcess.mm; sourceTree = "<group>"; };
+		04F3500424B4026700096AD1 /* QueueProcess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QueueProcess.h; sourceTree = "<group>"; };
 		04F3500924B4215900096AD1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		04F3500B24B4218E00096AD1 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		230D46F3227C6D8200EA8C90 /* XDXAudioQueueCapture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XDXAudioQueueCapture.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,14 +38,14 @@
 		230D4704227C6D8400EA8C90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		230D4705227C6D8400EA8C90 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		230D4712227C71CB00EA8C90 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		230D4714227C72A200EA8C90 /* XDXAudioQueueCaptureManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XDXAudioQueueCaptureManager.h; sourceTree = "<group>"; };
-		230D4715227C72A200EA8C90 /* XDXAudioQueueCaptureManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XDXAudioQueueCaptureManager.m; sourceTree = "<group>"; };
-		230D471A227C8B4700EA8C90 /* XDXAudioFileHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XDXAudioFileHandler.h; sourceTree = "<group>"; };
-		230D471B227C8B4700EA8C90 /* XDXAudioFileHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XDXAudioFileHandler.m; sourceTree = "<group>"; };
+		230D4714227C72A200EA8C90 /* AudioQueueCaptureManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioQueueCaptureManager.h; sourceTree = "<group>"; };
+		230D4715227C72A200EA8C90 /* AudioQueueCaptureManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioQueueCaptureManager.m; sourceTree = "<group>"; };
+		230D471A227C8B4700EA8C90 /* AudioFileHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioFileHandler.h; sourceTree = "<group>"; };
+		230D471B227C8B4700EA8C90 /* AudioFileHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioFileHandler.m; sourceTree = "<group>"; };
 		CF1ABAC124B346D100BCD062 /* log4cplus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = log4cplus.h; sourceTree = "<group>"; };
-		CF1ABAC224B346D100BCD062 /* XDXSingleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XDXSingleton.h; sourceTree = "<group>"; };
-		CF1ABAC524B3484900BCD062 /* XDXAudioQueuePlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDXAudioQueuePlayer.h; sourceTree = "<group>"; };
-		CF1ABAC624B3484900BCD062 /* XDXAudioQueuePlayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = XDXAudioQueuePlayer.mm; sourceTree = "<group>"; };
+		CF1ABAC224B346D100BCD062 /* Singleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
+		CF1ABAC524B3484900BCD062 /* AudioQueuePlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioQueuePlayer.h; sourceTree = "<group>"; };
+		CF1ABAC624B3484900BCD062 /* AudioQueuePlayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AudioQueuePlayer.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,8 +103,8 @@
 		230D470C227C6E0300EA8C90 /* AudioQueueCapture */ = {
 			isa = PBXGroup;
 			children = (
-				230D4714227C72A200EA8C90 /* XDXAudioQueueCaptureManager.h */,
-				230D4715227C72A200EA8C90 /* XDXAudioQueueCaptureManager.m */,
+				230D4714227C72A200EA8C90 /* AudioQueueCaptureManager.h */,
+				230D4715227C72A200EA8C90 /* AudioQueueCaptureManager.m */,
 			);
 			path = AudioQueueCapture;
 			sourceTree = "<group>";
@@ -122,8 +122,8 @@
 		CF1ABABC24B3441F00BCD062 /* DataTransfer */ = {
 			isa = PBXGroup;
 			children = (
-				04F3500424B4026700096AD1 /* XDXQueueProcess.h */,
-				04F3500324B4026700096AD1 /* XDXQueueProcess.mm */,
+				04F3500424B4026700096AD1 /* QueueProcess.h */,
+				04F3500324B4026700096AD1 /* QueueProcess.mm */,
 			);
 			path = DataTransfer;
 			sourceTree = "<group>";
@@ -132,7 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				CF1ABAC124B346D100BCD062 /* log4cplus.h */,
-				CF1ABAC224B346D100BCD062 /* XDXSingleton.h */,
+				CF1ABAC224B346D100BCD062 /* Singleton.h */,
 			);
 			path = 3rd;
 			sourceTree = "<group>";
@@ -140,8 +140,8 @@
 		CF1ABAC324B346E400BCD062 /* AudioFile */ = {
 			isa = PBXGroup;
 			children = (
-				230D471A227C8B4700EA8C90 /* XDXAudioFileHandler.h */,
-				230D471B227C8B4700EA8C90 /* XDXAudioFileHandler.m */,
+				230D471A227C8B4700EA8C90 /* AudioFileHandler.h */,
+				230D471B227C8B4700EA8C90 /* AudioFileHandler.m */,
 			);
 			path = AudioFile;
 			sourceTree = "<group>";
@@ -149,8 +149,8 @@
 		CF1ABAC424B3483300BCD062 /* AudioQueuePlayer */ = {
 			isa = PBXGroup;
 			children = (
-				CF1ABAC524B3484900BCD062 /* XDXAudioQueuePlayer.h */,
-				CF1ABAC624B3484900BCD062 /* XDXAudioQueuePlayer.mm */,
+				CF1ABAC524B3484900BCD062 /* AudioQueuePlayer.h */,
+				CF1ABAC624B3484900BCD062 /* AudioQueuePlayer.mm */,
 			);
 			path = AudioQueuePlayer;
 			sourceTree = "<group>";
@@ -226,12 +226,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				230D46FB227C6D8200EA8C90 /* ViewController.mm in Sources */,
-				CF1ABAC724B3484900BCD062 /* XDXAudioQueuePlayer.mm in Sources */,
-				04F3500524B4026700096AD1 /* XDXQueueProcess.mm in Sources */,
+				CF1ABAC724B3484900BCD062 /* AudioQueuePlayer.mm in Sources */,
+				04F3500524B4026700096AD1 /* QueueProcess.mm in Sources */,
 				230D4706227C6D8400EA8C90 /* main.m in Sources */,
-				230D471C227C8B4700EA8C90 /* XDXAudioFileHandler.m in Sources */,
+				230D471C227C8B4700EA8C90 /* AudioFileHandler.m in Sources */,
 				230D46F8227C6D8200EA8C90 /* AppDelegate.m in Sources */,
-				230D4716227C72A200EA8C90 /* XDXAudioQueueCaptureManager.m in Sources */,
+				230D4716227C72A200EA8C90 /* AudioQueueCaptureManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

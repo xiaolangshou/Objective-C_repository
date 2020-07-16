@@ -1,36 +1,36 @@
 //
-//  XDXAudioQueueCaptureManager.m
-//  XDXAudioQueueRecordAndPlayback
+//  AudioQueueCaptureManager.m
+//  AudioQueueRecordAndPlayback
 //
 //  Created by 小东邪 on 2019/5/3.
 //  Copyright © 2019 小东邪. All rights reserved.
 //
 
-#import "XDXAudioQueueCaptureManager.h"
-#import "XDXAudioFileHandler.h"
+#import "AudioQueueCaptureManager.h"
+#import "AudioFileHandler.h"
 #import <AVFoundation/AVFoundation.h>
 
-#define kXDXAudioPCMFramesPerPacket 1
-#define kXDXAudioPCMBitsPerChannel  16
+#define kAudioPCMFramesPerPacket 1
+#define kAudioPCMBitsPerChannel  16
 
 static const int kNumberBuffers = 3;
 
-struct XDXRecorderInfo {
+struct RecorderInfo {
     AudioStreamBasicDescription  mDataFormat;
     AudioQueueRef                mQueue;
     AudioQueueBufferRef          mBuffers[kNumberBuffers];
 };
-typedef struct XDXRecorderInfo *XDXRecorderInfoType;
+typedef struct RecorderInfo *RecorderInfoType;
 
-static XDXRecorderInfoType m_audioInfo;
+static RecorderInfoType m_audioInfo;
 
-@interface XDXAudioQueueCaptureManager ()
+@interface AudioQueueCaptureManager ()
 
 @property (nonatomic, assign, readwrite) BOOL isRunning;
 
 @end
 
-@implementation XDXAudioQueueCaptureManager
+@implementation AudioQueueCaptureManager
 SingletonM
 
 #pragma mark - Callback
@@ -41,7 +41,7 @@ static void CaptureAudioDataCallback(void *                                 inUs
                                      UInt32                                 inNumPackets,
                                      const AudioStreamPacketDescription*    inPacketDesc) {
     
-    XDXAudioQueueCaptureManager *instance = (__bridge XDXAudioQueueCaptureManager *)inUserData;
+    AudioQueueCaptureManager *instance = (__bridge AudioQueueCaptureManager *)inUserData;
     
     /*  Test audio fps
     static Float64 lastTime = 0;
@@ -64,7 +64,7 @@ static void CaptureAudioDataCallback(void *                                 inUs
             inNumPackets = inBuffer->mAudioDataByteSize / bytesPerPacket;
         }
         
-        [[XDXAudioFileHandler getInstance] writeFileWithInNumBytes:inBuffer->mAudioDataByteSize
+        [[AudioFileHandler getInstance] writeFileWithInNumBytes:inBuffer->mAudioDataByteSize
                                                       ioNumPackets:inNumPackets
                                                           inBuffer:inBuffer->mAudioData
                                                       inPacketDesc:inPacketDesc];
@@ -79,7 +79,7 @@ static void CaptureAudioDataCallback(void *                                 inUs
 
 #pragma mark - Init
 + (void)initialize {
-    m_audioInfo = XDXRecorderInfoType(malloc(sizeof(struct XDXRecorderInfo)));
+    m_audioInfo = RecorderInfoType(malloc(sizeof(struct RecorderInfo)));
 }
 
 - (instancetype)init {
@@ -130,9 +130,9 @@ static void CaptureAudioDataCallback(void *                                 inUs
     // Set detail audio format params
     if (formatID == kAudioFormatLinearPCM) {
         dataFormat.mFormatFlags     = kLinearPCMFormatFlagIsSignedInteger | kLinearPCMFormatFlagIsPacked;
-        dataFormat.mBitsPerChannel  = kXDXAudioPCMBitsPerChannel;
+        dataFormat.mBitsPerChannel  = kAudioPCMBitsPerChannel;
         dataFormat.mBytesPerPacket  = dataFormat.mBytesPerFrame = (dataFormat.mBitsPerChannel / 8) * dataFormat.mChannelsPerFrame;
-        dataFormat.mFramesPerPacket = kXDXAudioPCMFramesPerPacket;
+        dataFormat.mFramesPerPacket = kAudioPCMFramesPerPacket;
     } else if (formatID == kAudioFormatMPEG4AAC) {
         dataFormat.mFormatFlags = kMPEG4Object_AAC_Main;
     }
@@ -170,7 +170,7 @@ static void CaptureAudioDataCallback(void *                                 inUs
     } else {
         isNeedMagicCookie = YES;
     }
-    [[XDXAudioFileHandler getInstance] startVoiceRecordByAudioQueue:m_audioInfo->mQueue
+    [[AudioFileHandler getInstance] startVoiceRecordByAudioQueue:m_audioInfo->mQueue
                                                   isNeedMagicCookie:isNeedMagicCookie
                                                           audioDesc:m_audioInfo->mDataFormat];
     self.isRecordVoice = YES;
@@ -186,13 +186,13 @@ static void CaptureAudioDataCallback(void *                                 inUs
         isNeedMagicCookie = YES;
     }
     
-    [[XDXAudioFileHandler getInstance] stopVoiceRecordByAudioQueue:m_audioInfo->mQueue
+    [[AudioFileHandler getInstance] stopVoiceRecordByAudioQueue:m_audioInfo->mQueue
                                                    needMagicCookie:isNeedMagicCookie];
     NSLog(@"Audio Recorder: Stop record file.");
 }
 
 #pragma mark - Private
-- (void)configureAudioCaptureWithAudioInfo:(XDXRecorderInfoType)audioInfo
+- (void)configureAudioCaptureWithAudioInfo:(RecorderInfoType)audioInfo
                                   formatID:(UInt32)formatID
                                 sampleRate:(Float64)sampleRate
                               channelCount:(UInt32)channelCount
@@ -272,7 +272,7 @@ static void CaptureAudioDataCallback(void *                                 inUs
     }
 }
 
-- (BOOL)startAudioCaptureWithAudioInfo:(XDXRecorderInfoType)audioInfo isRunning:(BOOL *)isRunning {
+- (BOOL)startAudioCaptureWithAudioInfo:(RecorderInfoType)audioInfo isRunning:(BOOL *)isRunning {
     if (*isRunning) {
         NSLog(@"Audio Recorder: Start recorder repeat");
         return NO;
@@ -288,7 +288,7 @@ static void CaptureAudioDataCallback(void *                                 inUs
         return YES;
     }
 }
-- (BOOL)pauseAudioCaptureWithAudioInfo:(XDXRecorderInfoType)audioInfo isRunning:(BOOL *)isRunning {
+- (BOOL)pauseAudioCaptureWithAudioInfo:(RecorderInfoType)audioInfo isRunning:(BOOL *)isRunning {
     if (!*isRunning) {
         NSLog(@"Audio Recorder: audio capture is not running !");
         return NO;
@@ -305,7 +305,7 @@ static void CaptureAudioDataCallback(void *                                 inUs
     }
 }
 
--(BOOL)stopAudioQueueRecorderWithAudioInfo:(XDXRecorderInfoType)audioInfo isRunning:(BOOL *)isRunning {
+-(BOOL)stopAudioQueueRecorderWithAudioInfo:(RecorderInfoType)audioInfo isRunning:(BOOL *)isRunning {
     if (*isRunning == NO) {
         NSLog(@"Audio Recorder: Stop recorder repeat \n");
         return NO;
@@ -327,7 +327,7 @@ static void CaptureAudioDataCallback(void *                                 inUs
     }
 }
 
--(BOOL)freeAudioQueueRecorderWithAudioInfo:(XDXRecorderInfoType)audioInfo isRunning:(BOOL *)isRunning {
+-(BOOL)freeAudioQueueRecorderWithAudioInfo:(RecorderInfoType)audioInfo isRunning:(BOOL *)isRunning {
     if (*isRunning) {
         [self stopAudioQueueRecorderWithAudioInfo:audioInfo isRunning:isRunning];
     }

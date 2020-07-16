@@ -1,12 +1,12 @@
 //
-//  XDXSingleton.h
+//  Singleton.h
 //
 //  Created by 小东邪 on 2018/6/15.
 //  Copyright © 2018 小东邪. All rights reserved.
 //
 
-#ifndef XDXSingleton_h
-#define XDXSingleton_h
+#ifndef Singleton_h
+#define Singleton_h
 
 // .h文件的实现
 #define SingletonH
@@ -85,4 +85,4 @@ return _instace; \
 }
 #endif
 
-#endif /* XDXSingleton_h */
+#endif /* Singleton_h */

@@ -1,16 +1,16 @@
 //
-//  XDXAudioFileHandler.m
-//  XDXAudioQueueRecordAndPlayback
+//  AudioFileHandler.m
+//  AudioQueueRecordAndPlayback
 //
 //  Created by 小东邪 on 2019/5/3.
 //  Copyright © 2019 小东邪. All rights reserved.
 //
 
-#import "XDXAudioFileHandler.h"
+#import "AudioFileHandler.h"
 
 static const NSString *kModuleName = @"Audio File";
 
-@interface XDXAudioFileHandler ()
+@interface AudioFileHandler ()
 {
     AudioFileID m_recordFile;
     SInt64      m_recordCurrentPacket;      // current packet number in record file
@@ -24,7 +24,7 @@ static const NSString *kModuleName = @"Audio File";
 
 @end
 
-@implementation XDXAudioFileHandler
+@implementation AudioFileHandler
 SingletonM
 
 #pragma mark - Init
@@ -44,7 +44,10 @@ SingletonM
 #pragma mark - Public
 
 #pragma mark Record
--(void)startVoiceRecordByAudioUnitByAudioConverter:(AudioConverterRef)audioConverter needMagicCookie:(BOOL)isNeedMagicCookie audioDesc:(AudioStreamBasicDescription)audioDesc {
+-(void)startVoiceRecordByAudioUnitByAudioConverter:(AudioConverterRef)audioConverter
+                                   needMagicCookie:(BOOL)isNeedMagicCookie
+                                         audioDesc:(AudioStreamBasicDescription)audioDesc
+{
     self.recordFilePath = [self createFilePath];
     NSLog(@"%@:%s - record file path:%@",kModuleName,__func__,self.recordFilePath);
     

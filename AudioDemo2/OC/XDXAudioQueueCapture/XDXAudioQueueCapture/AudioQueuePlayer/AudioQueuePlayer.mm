@@ -1,43 +1,43 @@
 //
-//  XDXAudioQueuePlayer.m
-//  XDXAudioQueuePlayer
+//  AudioQueuePlayer.m
+//  AudioQueuePlayer
 //
 //  Created by 小东邪 on 2019/6/27.
 //  Copyright © 2019 小东邪. All rights reserved.
 //
 
 #import <AVFoundation/AVFoundation.h>
-#import "XDXAudioQueuePlayer.h"
-#import "XDXAudioFileHandler.h"
+#import "AudioQueuePlayer.h"
+#import "AudioFileHandler.h"
 
-#define kXDXAudioPCMFramesPerPacket 1
-#define kXDXAudioPCMBitsPerChannel  16
+#define kAudioPCMFramesPerPacket 1
+#define kAudioPCMBitsPerChannel  16
 
 static const int kNumberBuffers = 3;
 
-struct XDXAudioInfo {
+struct AudioInfo {
     AudioStreamBasicDescription  mDataFormat;
     AudioQueueRef                mQueue;
     AudioQueueBufferRef          mBuffers[kNumberBuffers];
     int                          mbufferSize;
 };
-typedef struct XDXAudioInfo *XDXAudioInfoRef;
+typedef struct AudioInfo *AudioInfoRef;
 
-static XDXAudioInfoRef m_audioInfo;
+static AudioInfoRef m_audioInfo;
 
-@interface XDXAudioQueuePlayer ()
+@interface AudioQueuePlayer ()
 
 @property (nonatomic, assign, readwrite) BOOL    isRunning;
 @property (nonatomic, assign) BOOL               isInitFinish;
 
 @end
 
-@implementation XDXAudioQueuePlayer
+@implementation AudioQueuePlayer
 SingletonM
 
 #pragma mark - Callback
 static void PlayAudioDataCallback(void * aqData,AudioQueueRef inAQ , AudioQueueBufferRef inBuffer) {
-    XDXAudioQueuePlayer *instance = (__bridge XDXAudioQueuePlayer *)aqData;
+    AudioQueuePlayer *instance = (__bridge AudioQueuePlayer *)aqData;
     if(instance == NULL){
         return;
     }
@@ -57,7 +57,7 @@ static void PlayAudioDataCallback(void * aqData,AudioQueueRef inAQ , AudioQueueB
 static void AudioQueuePlayerPropertyListenerProc  (void *              inUserData,
                                                    AudioQueueRef           inAQ,
                                                    AudioQueuePropertyID    inID) {
-    XDXAudioQueuePlayer * instance = (__bridge XDXAudioQueuePlayer *)inUserData;
+    AudioQueuePlayer * instance = (__bridge AudioQueuePlayer *)inUserData;
     UInt32 isRunning = 0;
     UInt32 size = sizeof(isRunning);
     
@@ -76,8 +76,8 @@ static void AudioQueuePlayerPropertyListenerProc  (void *              inUserDat
 
 #pragma mark - Lifecycle
 + (void)initialize {
-    int size = sizeof(XDXAudioInfo);
-    m_audioInfo = (XDXAudioInfoRef)malloc(size);
+    int size = sizeof(AudioInfo);
+    m_audioInfo = (AudioInfoRef)malloc(size);
 }
 
 - (instancetype)init {
@@ -85,7 +85,7 @@ static void AudioQueuePlayerPropertyListenerProc  (void *              inUserDat
     dispatch_once(&onceToken, ^{
         _instace                  = [super init];
         self->_isInitFinish       = NO;
-        self->_audioBufferQueue   = new XDXCustomQueueProcess();
+        self->_audioBufferQueue   = new CustomQueueProcess();
     });
     return _instace;
 }
@@ -106,7 +106,7 @@ static void AudioQueuePlayerPropertyListenerProc  (void *              inUserDat
 }
 
 - (void)configureAudioPlayerWithAudioFormat:(AudioStreamBasicDescription *)audioFormat bufferSize:(int)bufferSize {
-    memcpy(&m_audioInfo->mDataFormat, audioFormat, sizeof(XDXAudioInfo));
+    memcpy(&m_audioInfo->mDataFormat, audioFormat, sizeof(AudioInfo));
     m_audioInfo->mbufferSize = bufferSize;    
     BOOL isSuccess = [self configureAudioPlayerWithAudioInfo:m_audioInfo
                                                 playCallback:PlayAudioDataCallback
@@ -172,7 +172,7 @@ static void AudioQueuePlayerPropertyListenerProc  (void *              inUserDat
 }
 
 #pragma mark - Private
-- (BOOL)configureAudioPlayerWithAudioInfo:(XDXAudioInfoRef)audioInfo playCallback:(AudioQueueOutputCallback)playCallback listenerCallback:(AudioQueuePropertyListenerProc)listenerCallback {
+- (BOOL)configureAudioPlayerWithAudioInfo:(AudioInfoRef)audioInfo playCallback:(AudioQueueOutputCallback)playCallback listenerCallback:(AudioQueuePropertyListenerProc)listenerCallback {
 //    [self printASBD:*audioFormat];
     
     // Create audio queue
@@ -226,8 +226,8 @@ static void AudioQueuePlayerPropertyListenerProc  (void *              inUserDat
     return YES;
 }
 
-- (void)receiveAudioDataWithAudioQueueBuffer:(AudioQueueBufferRef)inBuffer audioInfo:(XDXAudioInfoRef)audioInfo audioBufferQueue:(XDXCustomQueueProcess *)audioBufferQueue {
-    XDXCustomQueueNode *node = audioBufferQueue->DeQueue(audioBufferQueue->m_work_queue);
+- (void)receiveAudioDataWithAudioQueueBuffer:(AudioQueueBufferRef)inBuffer audioInfo:(AudioInfoRef)audioInfo audioBufferQueue:(CustomQueueProcess *)audioBufferQueue {
+    CustomQueueNode *node = audioBufferQueue->DeQueue(audioBufferQueue->m_work_queue);
     
     if (node != NULL) {
         if (node->size > 0) {
@@ -253,7 +253,7 @@ static void AudioQueuePlayerPropertyListenerProc  (void *              inUserDat
     }
 }
 
-- (BOOL)startAudioPlayerWithAudioInfo:(XDXAudioInfoRef)audioInfo {
+- (BOOL)startAudioPlayerWithAudioInfo:(AudioInfoRef)audioInfo {
     for (int i = 0; i != kNumberBuffers; i++) {
         memset(audioInfo->mBuffers[i]->mAudioData, 0, audioInfo->mbufferSize);
         audioInfo->mBuffers[i]->mAudioDataByteSize = audioInfo->mbufferSize;
@@ -271,7 +271,7 @@ static void AudioQueuePlayerPropertyListenerProc  (void *              inUserDat
     }
 }
 
-- (BOOL)pauseAudioPlayerWithAudioInfo:(XDXAudioInfoRef)audioInfo {
+- (BOOL)pauseAudioPlayerWithAudioInfo:(AudioInfoRef)audioInfo {
     OSStatus status = AudioQueuePause(audioInfo->mQueue);
     if (status != noErr) {
         NSLog(@"Audio Player: Audio Queue pause failed status:%d \n",(int)status);
@@ -282,7 +282,7 @@ static void AudioQueuePlayerPropertyListenerProc  (void *              inUserDat
     }
 }
 
-- (BOOL)resumeAudioPlayerWithAudioInfo:(XDXAudioInfoRef)audioInfo {
+- (BOOL)resumeAudioPlayerWithAudioInfo:(AudioInfoRef)audioInfo {
     OSStatus status = AudioQueueStart(audioInfo->mQueue, NULL);
     if (status != noErr) {
         NSLog(@"Audio Player: Audio Queue resume failed status:%d \n",(int)status);
@@ -293,7 +293,7 @@ static void AudioQueuePlayerPropertyListenerProc  (void *              inUserDat
     }
 }
 
--(BOOL)stopAudioQueueRecorderWithAudioInfo:(XDXAudioInfoRef)audioInfo {
+-(BOOL)stopAudioQueueRecorderWithAudioInfo:(AudioInfoRef)audioInfo {
     if (audioInfo->mQueue) {
         OSStatus stopRes = AudioQueueStop(audioInfo->mQueue, true);
         
@@ -310,7 +310,7 @@ static void AudioQueuePlayerPropertyListenerProc  (void *              inUserDat
     }
 }
 
--(BOOL)freeAudioQueueRecorderWithAudioInfo:(XDXAudioInfoRef)audioInfo {
+-(BOOL)freeAudioQueueRecorderWithAudioInfo:(AudioInfoRef)audioInfo {
     if (audioInfo->mQueue) {
         for (int i = 0; i < kNumberBuffers; i++) {
             AudioQueueFreeBuffer(audioInfo->mQueue, audioInfo->mBuffers[i]);
@@ -413,9 +413,9 @@ static void AudioQueuePlayerPropertyListenerProc  (void *              inUserDat
     if (formatID == kAudioFormatLinearPCM) {
         dataFormat.mFormatFlags     = kLinearPCMFormatFlagIsSignedInteger | kLinearPCMFormatFlagIsPacked;
         
-        dataFormat.mBitsPerChannel  = kXDXAudioPCMBitsPerChannel;
+        dataFormat.mBitsPerChannel  = kAudioPCMBitsPerChannel;
         dataFormat.mBytesPerPacket  = dataFormat.mBytesPerFrame = (dataFormat.mBitsPerChannel / 8) * dataFormat.mChannelsPerFrame;
-        dataFormat.mFramesPerPacket = kXDXAudioPCMFramesPerPacket;
+        dataFormat.mFramesPerPacket = kAudioPCMFramesPerPacket;
     } else if (formatID == kAudioFormatMPEG4AAC) {
         dataFormat.mFormatFlags = kMPEG4Object_AAC_Main;
     }

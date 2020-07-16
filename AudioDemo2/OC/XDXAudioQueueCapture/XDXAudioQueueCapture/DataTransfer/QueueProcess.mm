@@ -1,30 +1,30 @@
 //
-//  XDXQueueProcess.m
+//  QueueProcess.m
 //  CacheSampleBuffer
 //
 //  Created by 小东邪 on 08/01/2018.
 //  Copyright © 2018 小东邪. All rights reserved.
 //
 
-#import "XDXQueueProcess.h"
+#import "QueueProcess.h"
 #import <pthread.h>
 #include "log4cplus.h"
 
 #pragma mark - Queue Size   设置队列的长度，不可过长
-const int XDXCustomQueueSize = 20;
+const int CustomQueueSize = 20;
 
-const static char *kModuleName = "XDXQueueProcess";
+const static char *kModuleName = "QueueProcess";
 
 #pragma mark - Init
-XDXCustomQueueProcess::XDXCustomQueueProcess() {
-    m_free_queue = (XDXCustomQueue *)malloc(sizeof(struct XDXCustomQueue));
-    m_work_queue = (XDXCustomQueue *)malloc(sizeof(struct XDXCustomQueue));
+CustomQueueProcess::CustomQueueProcess() {
+    m_free_queue = (CustomQueue *)malloc(sizeof(struct CustomQueue));
+    m_work_queue = (CustomQueue *)malloc(sizeof(struct CustomQueue));
     
-    InitQueue(m_free_queue, XDXCustomFreeQueue);
-    InitQueue(m_work_queue, XDXCustomWorkQueue);
+    InitQueue(m_free_queue, CustomFreeQueue);
+    InitQueue(m_work_queue, CustomWorkQueue);
     
-    for (int i = 0; i < XDXCustomQueueSize; i++) {
-        XDXCustomQueueNode *node = (XDXCustomQueueNode *)malloc(sizeof(struct XDXCustomQueueNode));
+    for (int i = 0; i < CustomQueueSize; i++) {
+        CustomQueueNode *node = (CustomQueueNode *)malloc(sizeof(struct CustomQueueNode));
         node->data = NULL;
         node->size = 0;
         node->index= 0;
@@ -37,7 +37,7 @@ XDXCustomQueueProcess::XDXCustomQueueProcess() {
     log4cplus_info(kModuleName, "%s: Init finish !",__func__);
 }
 
-void XDXCustomQueueProcess::InitQueue(XDXCustomQueue *queue, XDXCustomQueueType type) {
+void CustomQueueProcess::InitQueue(CustomQueue *queue, CustomQueueType type) {
     if (queue != NULL) {
         queue->type  = type;
         queue->size  = 0;
@@ -47,7 +47,7 @@ void XDXCustomQueueProcess::InitQueue(XDXCustomQueue *queue, XDXCustomQueueType 
 }
 
 #pragma mark - Main Operation
-void XDXCustomQueueProcess::EnQueue(XDXCustomQueue *queue, XDXCustomQueueNode *node) {
+void CustomQueueProcess::EnQueue(CustomQueue *queue, CustomQueueNode *node) {
     if (queue == NULL) {
         log4cplus_debug(kModuleName, "%s: current queue is NULL",__func__);
         return;
@@ -60,7 +60,7 @@ void XDXCustomQueueProcess::EnQueue(XDXCustomQueue *queue, XDXCustomQueueNode *n
     
     node->next = NULL;
     
-    if (XDXCustomFreeQueue == queue->type) {
+    if (CustomFreeQueue == queue->type) {
         pthread_mutex_lock(&free_queue_mutex);
         
         if (queue->front == NULL) {
@@ -82,7 +82,7 @@ void XDXCustomQueueProcess::EnQueue(XDXCustomQueue *queue, XDXCustomQueueNode *n
         pthread_mutex_unlock(&free_queue_mutex);
     }
     
-    if (XDXCustomWorkQueue == queue->type) {
+    if (CustomWorkQueue == queue->type) {
         pthread_mutex_lock(&work_queue_mutex);
         //TODO
         static long nodeIndex = 0;
@@ -100,15 +100,15 @@ void XDXCustomQueueProcess::EnQueue(XDXCustomQueue *queue, XDXCustomQueueNode *n
     }
 }
 
-XDXCustomQueueNode* XDXCustomQueueProcess::DeQueue(XDXCustomQueue *queue) {
+CustomQueueNode* CustomQueueProcess::DeQueue(CustomQueue *queue) {
     if (queue == NULL) {
         log4cplus_debug(kModuleName, "%s: current queue is NULL",__func__);
         return NULL;
     }
     
-    const char *type = queue->type == XDXCustomWorkQueue ? "work queue" : "free queue";
-    pthread_mutex_t *queue_mutex = ((queue->type == XDXCustomWorkQueue) ? &work_queue_mutex : &free_queue_mutex);
-    XDXCustomQueueNode *element = NULL;
+    const char *type = queue->type == CustomWorkQueue ? "work queue" : "free queue";
+    pthread_mutex_t *queue_mutex = ((queue->type == CustomWorkQueue) ? &work_queue_mutex : &free_queue_mutex);
+    CustomQueueNode *element = NULL;
     
     pthread_mutex_lock(queue_mutex);
     element = queue->front;
@@ -126,7 +126,7 @@ XDXCustomQueueNode* XDXCustomQueueProcess::DeQueue(XDXCustomQueue *queue) {
     return element;
 }
 
-void XDXCustomQueueProcess::ResetFreeQueue(XDXCustomQueue *workQueue, XDXCustomQueue *freeQueue) {
+void CustomQueueProcess::ResetFreeQueue(CustomQueue *workQueue, CustomQueue *freeQueue) {
     if (workQueue == NULL) {
         log4cplus_debug(kModuleName, "%s: The WorkQueue is NULL",__func__);
         return;
@@ -140,7 +140,7 @@ void XDXCustomQueueProcess::ResetFreeQueue(XDXCustomQueue *workQueue, XDXCustomQ
     int workQueueSize = workQueue->size;
     if (workQueueSize > 0) {
         for (int i = 0; i < workQueueSize; i++) {
-            XDXCustomQueueNode *node = DeQueue(workQueue);
+            CustomQueueNode *node = DeQueue(workQueue);
             node->data = NULL;
             EnQueue(freeQueue, node);
         }
@@ -148,24 +148,24 @@ void XDXCustomQueueProcess::ResetFreeQueue(XDXCustomQueue *workQueue, XDXCustomQ
     log4cplus_info(kModuleName, "%s: ResetFreeQueue : The work queue size is %d, free queue size is %d",__func__,workQueue->size, freeQueue->size);
 }
 
-void XDXCustomQueueProcess::ClearXDXCustomQueue(XDXCustomQueue *queue) {
+void CustomQueueProcess::ClearCustomQueue(CustomQueue *queue) {
     while (queue->size) {
-        XDXCustomQueueNode *node = this->DeQueue(queue);
+        CustomQueueNode *node = this->DeQueue(queue);
         this->FreeNode(node);
     }
 
-    log4cplus_info(kModuleName, "%s: Clear XDXCustomQueueProcess queue",__func__);
+    log4cplus_info(kModuleName, "%s: Clear CustomQueueProcess queue",__func__);
 }
 
-void XDXCustomQueueProcess::FreeNode(XDXCustomQueueNode* node) {
+void CustomQueueProcess::FreeNode(CustomQueueNode* node) {
     if(node != NULL){
         free(node->data);
         free(node);
     }
 }
 
-int XDXCustomQueueProcess::GetQueueSize(XDXCustomQueue *queue) {
-    pthread_mutex_t *queue_mutex = ((queue->type == XDXCustomWorkQueue) ? &work_queue_mutex : &free_queue_mutex);
+int CustomQueueProcess::GetQueueSize(CustomQueue *queue) {
+    pthread_mutex_t *queue_mutex = ((queue->type == CustomWorkQueue) ? &work_queue_mutex : &free_queue_mutex);
     int size;
     pthread_mutex_lock(queue_mutex);
     size = queue->size;

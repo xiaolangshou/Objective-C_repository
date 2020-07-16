@@ -1,22 +1,22 @@
 //
-//  XDXAudioQueuePlayer.h
-//  XDXAudioQueuePlayer
+//  AudioQueuePlayer.h
+//  AudioQueuePlayer
 //
 //  Created by 小东邪 on 2019/6/27.
 //  Copyright © 2019 小东邪. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
-#import "XDXSingleton.h"
-#import "XDXQueueProcess.h"
+#import "Singleton.h"
+#import "QueueProcess.h"
 
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface XDXAudioQueuePlayer : NSObject
+@interface AudioQueuePlayer : NSObject
 {
     @public
-    XDXCustomQueueProcess   *_audioBufferQueue;
+    CustomQueueProcess   *_audioBufferQueue;
 }
 
 SingletonH
