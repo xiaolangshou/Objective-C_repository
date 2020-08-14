@@ -1,20 +1,20 @@
 //
 //  ViewController.m
-//  XDXAudioQueueRecordAndPlayback
+//  AudioQueueRecordAndPlayback
 //
 //  Created by 小东邪 on 2019/5/3.
 //  Copyright © 2019 小东邪. All rights reserved.
 //
 
 #import "ViewController.h"
-#import "XDXQueueProcess.h"
-#import "XDXAudioFileHandler.h"
-#import "XDXAudioQueuePlayer.h"
-#import "XDXAudioQueueCaptureManager.h"
+#import "QueueProcess.h"
+#import "AudioFileHandler.h"
+#import "AudioQueuePlayer.h"
+#import "AudioQueueCaptureManager.h"
 
 #import <AVFoundation/AVFoundation.h>
 
-#define kXDXReadAudioPacketsNum 4096
+#define kReadAudioPacketsNum 4096
 
 @interface ViewController ()
 
@@ -35,7 +35,7 @@
 }
 
 - (void)dealloc {
-    [[XDXAudioQueueCaptureManager getInstance] stopAudioCapture];
+    [[AudioQueueCaptureManager getInstance] stopAudioCapture];
 }
 
 - (void)setupUI {
@@ -59,11 +59,11 @@
     
     if (btn.isSelected) {
         [btn setBackgroundImage:[UIImage imageNamed:@"icon_recored_audio"] forState:UIControlStateNormal];
-        [[XDXAudioQueueCaptureManager getInstance] startRecordFile];
+        [[AudioQueueCaptureManager getInstance] startRecordFile];
 
     } else {
         [btn setBackgroundImage:[UIImage imageNamed:@"icon_recored_audio_pre"] forState:UIControlStateNormal];
-        [[XDXAudioQueueCaptureManager getInstance] stopRecordFile];
+        [[AudioQueueCaptureManager getInstance] stopRecordFile];
     }
 }
 
@@ -94,31 +94,31 @@
     };
     
     // Configure Audio Queue Player
-    [[XDXAudioQueuePlayer getInstance] configureAudioPlayerWithAudioFormat:&audioFormat bufferSize:kXDXReadAudioPacketsNum * audioFormat.mBytesPerPacket];
+    [[AudioQueuePlayer getInstance] configureAudioPlayerWithAudioFormat:&audioFormat bufferSize:kReadAudioPacketsNum * audioFormat.mBytesPerPacket];
 }
 
 - (void)startAudioCapture {
     
-    [[XDXAudioQueueCaptureManager getInstance] startAudioCapture];
+    [[AudioQueueCaptureManager getInstance] startAudioCapture];
 }
 
 - (void)startPlay {
     
     // Configure Audio File
-    NSString *filePath = [XDXAudioFileHandler getInstance].recordFilePath;
-    XDXAudioFileHandler *fileHandler = [XDXAudioFileHandler getInstance];
+    NSString *filePath = [AudioFileHandler getInstance].recordFilePath;
+    AudioFileHandler *fileHandler = [AudioFileHandler getInstance];
     [fileHandler configurePlayFilePath:filePath];
     NSLog(@"filePath = %@", filePath);
 
     [self putAudioDataIntoDataQueue];
-    [[XDXAudioQueuePlayer getInstance] startAudioPlayer];
+    [[AudioQueuePlayer getInstance] startAudioPlayer];
     
     self.isStopPlay = NO;
 }
 
 - (void)stopPlay {
     
-    [[XDXAudioQueuePlayer getInstance] stopAudioPlayer];
+    [[AudioQueuePlayer getInstance] stopAudioPlayer];
     self.isStopPlay = YES;
 }
 
@@ -133,16 +133,16 @@
         [NSTimer scheduledTimerWithTimeInterval:0.09 repeats:YES block:^(NSTimer * _Nonnull timer) {
             if (self.isStopPlay) {
                 [timer invalidate];
-                [[XDXAudioFileHandler getInstance] resetFileForPlay];
-                XDXCustomQueueProcess *audioBufferQueue =  [XDXAudioQueuePlayer getInstance]->_audioBufferQueue;
+                [[AudioFileHandler getInstance] resetFileForPlay];
+                CustomQueueProcess *audioBufferQueue =  [AudioQueuePlayer getInstance]->_audioBufferQueue;
                 audioBufferQueue->ResetFreeQueue(audioBufferQueue->m_work_queue, audioBufferQueue->m_free_queue);
                 return;
             }
             
-            void *audioData = malloc([XDXAudioQueuePlayer audioBufferSize]);
-            readBytes = [[XDXAudioFileHandler getInstance] readAudioFromFileBytesWithAudioDataRef:audioData
+            void *audioData = malloc([AudioQueuePlayer audioBufferSize]);
+            readBytes = [[AudioFileHandler getInstance] readAudioFromFileBytesWithAudioDataRef:audioData
                                                                                        packetDesc:packetDesc
-                                                                                   readPacketsNum:kXDXReadAudioPacketsNum];
+                                                                                   readPacketsNum:kReadAudioPacketsNum];
             
             if (readBytes > 0) {
                 [self addBufferToWorkQueueWithAudioData:audioData size:readBytes userData:packetDesc];
@@ -158,11 +158,11 @@
 }
 
 - (void)addBufferToWorkQueueWithAudioData:(void *)data  size:(int)size userData:(void *)userData {
-    XDXCustomQueueProcess *audioBufferQueue =  [XDXAudioQueuePlayer getInstance]->_audioBufferQueue;
+    CustomQueueProcess *audioBufferQueue =  [AudioQueuePlayer getInstance]->_audioBufferQueue;
     
-    XDXCustomQueueNode *node = audioBufferQueue->DeQueue(audioBufferQueue->m_free_queue);
+    CustomQueueNode *node = audioBufferQueue->DeQueue(audioBufferQueue->m_free_queue);
     if (node == NULL) {
-        NSLog(@"XDXCustomQueueProcess addBufferToWorkQueueWithSampleBuffer : Data in , the node is NULL !");
+        NSLog(@"CustomQueueProcess addBufferToWorkQueueWithSampleBuffer : Data in , the node is NULL !");
         return;
     }
     node->data = data;
@@ -170,7 +170,7 @@
     node->userData = userData;
     audioBufferQueue->EnQueue(audioBufferQueue->m_work_queue, node);
     
-    NSLog(@"XDXCustomQueueProcess addBufferToWorkQueueWithSampleBuffer : Data in ,  work size = %d, free size = %d !",audioBufferQueue->m_work_queue->size, audioBufferQueue->m_free_queue->size);
+    NSLog(@"CustomQueueProcess addBufferToWorkQueueWithSampleBuffer : Data in ,  work size = %d, free size = %d !",audioBufferQueue->m_work_queue->size, audioBufferQueue->m_free_queue->size);
 }
 
 @end
