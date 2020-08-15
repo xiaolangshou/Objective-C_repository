@@ -18,8 +18,8 @@
     [super viewDidLoad];
     
     /* GCD 的队列组：dispatch_group 使用场景 */
-    [self dispatchGroupNotify1];
-//    [self dispatchGroupNotify2];
+//    [self dispatchGroupNotify1];
+    [self dispatchGroupNotify2];
 }
 
 - (void)dispatchGroupNotify1 {
@@ -55,7 +55,7 @@
     NSLog(@"---end---");
 }
 
-// enter \ leave
+// enter \ leave 分组管理异步任务
 - (void)dispatchGroupNotify2 {
     
     dispatch_group_t group = dispatch_group_create();

@@ -28,6 +28,7 @@
 }
 
 - (void)osLock {
+    
     os_unfair_lock lock = OS_UNFAIR_LOCK_INIT;
     os_unfair_lock_lock(&lock);
     
