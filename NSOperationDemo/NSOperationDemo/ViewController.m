@@ -183,7 +183,7 @@
         NSLog(@"执行block2");
     }];
     
-    blkop1.queuePriority = NSOperationQueuePriorityLow;
+    blkop1.queuePriority = NSOperationQueuePriorityVeryLow;
     blkop2.queuePriority = NSOperationQueuePriorityVeryHigh;
     
     NSLog(@"blkop1 == %@",blkop1);
