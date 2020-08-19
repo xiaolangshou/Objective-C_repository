@@ -18,8 +18,8 @@
     [super viewDidLoad];
     
     /* GCD 的队列组：dispatch_group 使用场景 */
-//    [self dispatchGroupNotify1];
-    [self dispatchGroupNotify2];
+    [self dispatchGroupNotify1];
+//    [self dispatchGroupNotify2];
 }
 
 - (void)dispatchGroupNotify1 {
