@@ -40,7 +40,6 @@
     if (self.urlStr) {
          [self.hosterKit StartPushRtmpStream:self.urlStr];
     }
-   
     
 }
 #pragma mark - button event
