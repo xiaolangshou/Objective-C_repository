@@ -1,0 +1,590 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF70BF952500F6170033AADB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF70BF942500F6170033AADB /* AppDelegate.m */; };
+		CF70BF982500F6170033AADB /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF70BF972500F6170033AADB /* SceneDelegate.m */; };
+		CF70BF9B2500F6170033AADB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF70BF9A2500F6170033AADB /* ViewController.m */; };
+		CF70BF9E2500F6170033AADB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF70BF9C2500F6170033AADB /* Main.storyboard */; };
+		CF70BFA02500F6190033AADB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF70BF9F2500F6190033AADB /* Assets.xcassets */; };
+		CF70BFA32500F6190033AADB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF70BFA12500F6190033AADB /* LaunchScreen.storyboard */; };
+		CF70BFA62500F6190033AADB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF70BFA52500F6190033AADB /* main.m */; };
+		CF70BFB02500F61A0033AADB /* shaollowCopyDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF70BFAF2500F61A0033AADB /* shaollowCopyDemoTests.m */; };
+		CF70BFBB2500F61A0033AADB /* shaollowCopyDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF70BFBA2500F61A0033AADB /* shaollowCopyDemoUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CF70BFAC2500F61A0033AADB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF70BF882500F6170033AADB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF70BF8F2500F6170033AADB;
+			remoteInfo = shaollowCopyDemo;
+		};
+		CF70BFB72500F61A0033AADB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF70BF882500F6170033AADB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF70BF8F2500F6170033AADB;
+			remoteInfo = shaollowCopyDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CF70BF902500F6170033AADB /* shaollowCopyDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shaollowCopyDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF70BF932500F6170033AADB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CF70BF942500F6170033AADB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CF70BF962500F6170033AADB /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		CF70BF972500F6170033AADB /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		CF70BF992500F6170033AADB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CF70BF9A2500F6170033AADB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CF70BF9D2500F6170033AADB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CF70BF9F2500F6190033AADB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CF70BFA22500F6190033AADB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CF70BFA42500F6190033AADB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF70BFA52500F6190033AADB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CF70BFAB2500F61A0033AADB /* shaollowCopyDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = shaollowCopyDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF70BFAF2500F61A0033AADB /* shaollowCopyDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = shaollowCopyDemoTests.m; sourceTree = "<group>"; };
+		CF70BFB12500F61A0033AADB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF70BFB62500F61A0033AADB /* shaollowCopyDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = shaollowCopyDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF70BFBA2500F61A0033AADB /* shaollowCopyDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = shaollowCopyDemoUITests.m; sourceTree = "<group>"; };
+		CF70BFBC2500F61A0033AADB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF70BF8D2500F6170033AADB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF70BFA82500F61A0033AADB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF70BFB32500F61A0033AADB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF70BF872500F6170033AADB = {
+			isa = PBXGroup;
+			children = (
+				CF70BF922500F6170033AADB /* shaollowCopyDemo */,
+				CF70BFAE2500F61A0033AADB /* shaollowCopyDemoTests */,
+				CF70BFB92500F61A0033AADB /* shaollowCopyDemoUITests */,
+				CF70BF912500F6170033AADB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CF70BF912500F6170033AADB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF70BF902500F6170033AADB /* shaollowCopyDemo.app */,
+				CF70BFAB2500F61A0033AADB /* shaollowCopyDemoTests.xctest */,
+				CF70BFB62500F61A0033AADB /* shaollowCopyDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF70BF922500F6170033AADB /* shaollowCopyDemo */ = {
+			isa = PBXGroup;
+			children = (
+				CF70BF932500F6170033AADB /* AppDelegate.h */,
+				CF70BF942500F6170033AADB /* AppDelegate.m */,
+				CF70BF962500F6170033AADB /* SceneDelegate.h */,
+				CF70BF972500F6170033AADB /* SceneDelegate.m */,
+				CF70BF992500F6170033AADB /* ViewController.h */,
+				CF70BF9A2500F6170033AADB /* ViewController.m */,
+				CF70BF9C2500F6170033AADB /* Main.storyboard */,
+				CF70BF9F2500F6190033AADB /* Assets.xcassets */,
+				CF70BFA12500F6190033AADB /* LaunchScreen.storyboard */,
+				CF70BFA42500F6190033AADB /* Info.plist */,
+				CF70BFA52500F6190033AADB /* main.m */,
+			);
+			path = shaollowCopyDemo;
+			sourceTree = "<group>";
+		};
+		CF70BFAE2500F61A0033AADB /* shaollowCopyDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				CF70BFAF2500F61A0033AADB /* shaollowCopyDemoTests.m */,
+				CF70BFB12500F61A0033AADB /* Info.plist */,
+			);
+			path = shaollowCopyDemoTests;
+			sourceTree = "<group>";
+		};
+		CF70BFB92500F61A0033AADB /* shaollowCopyDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CF70BFBA2500F61A0033AADB /* shaollowCopyDemoUITests.m */,
+				CF70BFBC2500F61A0033AADB /* Info.plist */,
+			);
+			path = shaollowCopyDemoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF70BF8F2500F6170033AADB /* shaollowCopyDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF70BFBF2500F61A0033AADB /* Build configuration list for PBXNativeTarget "shaollowCopyDemo" */;
+			buildPhases = (
+				CF70BF8C2500F6170033AADB /* Sources */,
+				CF70BF8D2500F6170033AADB /* Frameworks */,
+				CF70BF8E2500F6170033AADB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = shaollowCopyDemo;
+			productName = shaollowCopyDemo;
+			productReference = CF70BF902500F6170033AADB /* shaollowCopyDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CF70BFAA2500F61A0033AADB /* shaollowCopyDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF70BFC22500F61A0033AADB /* Build configuration list for PBXNativeTarget "shaollowCopyDemoTests" */;
+			buildPhases = (
+				CF70BFA72500F61A0033AADB /* Sources */,
+				CF70BFA82500F61A0033AADB /* Frameworks */,
+				CF70BFA92500F61A0033AADB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF70BFAD2500F61A0033AADB /* PBXTargetDependency */,
+			);
+			name = shaollowCopyDemoTests;
+			productName = shaollowCopyDemoTests;
+			productReference = CF70BFAB2500F61A0033AADB /* shaollowCopyDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CF70BFB52500F61A0033AADB /* shaollowCopyDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF70BFC52500F61A0033AADB /* Build configuration list for PBXNativeTarget "shaollowCopyDemoUITests" */;
+			buildPhases = (
+				CF70BFB22500F61A0033AADB /* Sources */,
+				CF70BFB32500F61A0033AADB /* Frameworks */,
+				CF70BFB42500F61A0033AADB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF70BFB82500F61A0033AADB /* PBXTargetDependency */,
+			);
+			name = shaollowCopyDemoUITests;
+			productName = shaollowCopyDemoUITests;
+			productReference = CF70BFB62500F61A0033AADB /* shaollowCopyDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF70BF882500F6170033AADB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Liu Tao";
+				TargetAttributes = {
+					CF70BF8F2500F6170033AADB = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					CF70BFAA2500F61A0033AADB = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = CF70BF8F2500F6170033AADB;
+					};
+					CF70BFB52500F61A0033AADB = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = CF70BF8F2500F6170033AADB;
+					};
+				};
+			};
+			buildConfigurationList = CF70BF8B2500F6170033AADB /* Build configuration list for PBXProject "shaollowCopyDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF70BF872500F6170033AADB;
+			productRefGroup = CF70BF912500F6170033AADB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF70BF8F2500F6170033AADB /* shaollowCopyDemo */,
+				CF70BFAA2500F61A0033AADB /* shaollowCopyDemoTests */,
+				CF70BFB52500F61A0033AADB /* shaollowCopyDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF70BF8E2500F6170033AADB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF70BFA32500F6190033AADB /* LaunchScreen.storyboard in Resources */,
+				CF70BFA02500F6190033AADB /* Assets.xcassets in Resources */,
+				CF70BF9E2500F6170033AADB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF70BFA92500F61A0033AADB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF70BFB42500F61A0033AADB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF70BF8C2500F6170033AADB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF70BF9B2500F6170033AADB /* ViewController.m in Sources */,
+				CF70BF952500F6170033AADB /* AppDelegate.m in Sources */,
+				CF70BFA62500F6190033AADB /* main.m in Sources */,
+				CF70BF982500F6170033AADB /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF70BFA72500F61A0033AADB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF70BFB02500F61A0033AADB /* shaollowCopyDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF70BFB22500F61A0033AADB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF70BFBB2500F61A0033AADB /* shaollowCopyDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CF70BFAD2500F61A0033AADB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF70BF8F2500F6170033AADB /* shaollowCopyDemo */;
+			targetProxy = CF70BFAC2500F61A0033AADB /* PBXContainerItemProxy */;
+		};
+		CF70BFB82500F61A0033AADB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF70BF8F2500F6170033AADB /* shaollowCopyDemo */;
+			targetProxy = CF70BFB72500F61A0033AADB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CF70BF9C2500F6170033AADB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF70BF9D2500F6170033AADB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CF70BFA12500F6190033AADB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF70BFA22500F6190033AADB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CF70BFBD2500F61A0033AADB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CF70BFBE2500F61A0033AADB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CF70BFC02500F61A0033AADB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LPF3349M6Q;
+				INFOPLIST_FILE = shaollowCopyDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ThomasLTD.shaollowCopyDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CF70BFC12500F61A0033AADB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LPF3349M6Q;
+				INFOPLIST_FILE = shaollowCopyDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ThomasLTD.shaollowCopyDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CF70BFC32500F61A0033AADB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LPF3349M6Q;
+				INFOPLIST_FILE = shaollowCopyDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ThomasLTD.shaollowCopyDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/shaollowCopyDemo.app/shaollowCopyDemo";
+			};
+			name = Debug;
+		};
+		CF70BFC42500F61A0033AADB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LPF3349M6Q;
+				INFOPLIST_FILE = shaollowCopyDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ThomasLTD.shaollowCopyDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/shaollowCopyDemo.app/shaollowCopyDemo";
+			};
+			name = Release;
+		};
+		CF70BFC62500F61A0033AADB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LPF3349M6Q;
+				INFOPLIST_FILE = shaollowCopyDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ThomasLTD.shaollowCopyDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = shaollowCopyDemo;
+			};
+			name = Debug;
+		};
+		CF70BFC72500F61A0033AADB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LPF3349M6Q;
+				INFOPLIST_FILE = shaollowCopyDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ThomasLTD.shaollowCopyDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = shaollowCopyDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF70BF8B2500F6170033AADB /* Build configuration list for PBXProject "shaollowCopyDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF70BFBD2500F61A0033AADB /* Debug */,
+				CF70BFBE2500F61A0033AADB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF70BFBF2500F61A0033AADB /* Build configuration list for PBXNativeTarget "shaollowCopyDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF70BFC02500F61A0033AADB /* Debug */,
+				CF70BFC12500F61A0033AADB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF70BFC22500F61A0033AADB /* Build configuration list for PBXNativeTarget "shaollowCopyDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF70BFC32500F61A0033AADB /* Debug */,
+				CF70BFC42500F61A0033AADB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF70BFC52500F61A0033AADB /* Build configuration list for PBXNativeTarget "shaollowCopyDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF70BFC62500F61A0033AADB /* Debug */,
+				CF70BFC72500F61A0033AADB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CF70BF882500F6170033AADB /* Project object */;
+}
