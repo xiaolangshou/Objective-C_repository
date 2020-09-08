@@ -24,7 +24,23 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
+    // 自动归档、解档
+    NSData *data = [[NSUserDefaults standardUserDefaults] objectForKey:@"PersonInfo"];
+    if (data) {
+        // 解档使用
+        ViewController *person = [NSKeyedUnarchiver unarchiveObjectWithData:data];
+        NSLog(@"name: %@", person.name);
+    } else {
+        ViewController *person = [[ViewController alloc] init];
+        person.name = @"thomas";
+        person.age = @"29";
+        person.company = @"Alibaba";
+        person.job = @"iOS Dev";
+        person.address = @"sz";
+        // 归档存储
+        data = [NSKeyedArchiver archivedDataWithRootObject:person];
+        [[NSUserDefaults standardUserDefaults] setObject:data forKey:@"PersonInfo"];
+    }
     
 }
 
@@ -33,7 +49,7 @@
     if (self = [super initWithCoder:coder]) {
         unsigned int outCount;
         
-        Ivar * ivars = class_copyIvarList([self class], &outCount);
+        Ivar * ivars = class_copyIvarList([self class], &outCount);// 通过此方法获取类的所有属性
         for (int i = 0; i < outCount; i ++) {
             Ivar ivar = ivars[i];
             NSString *key = [NSString stringWithUTF8String:ivar_getName(ivar)];
