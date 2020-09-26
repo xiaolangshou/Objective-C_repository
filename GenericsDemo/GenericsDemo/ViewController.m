@@ -7,11 +7,9 @@
 //
 
 #import "ViewController.h"
-#import "TLCollection.h"
+#import "Person.h"
 
 @interface ViewController ()
-
-@property (strong, nonatomic) NSMutableArray<TLCollection *> *personArr;
 
 @end
 
@@ -19,12 +17,12 @@
 
 
 
-// 泛型：不声明具体类型，以便编写出灵活的，可重用的方法和类型。
+// 泛型：不声明具体类型（或可限制内容的类型），以便编写出灵活的，可重用的方法和类型。
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-//    [self demo1];
+ // [self demo1];
     [self demo2];
 }
 
@@ -33,7 +31,7 @@
     // 元素类型为NSString的数组
     NSArray<NSString *> *arr = @[@"a",@"b"];
     
-    // 字典
+    // 元素类型为<NSString: NSNumber>的字典
     NSDictionary<NSString *, NSNumber *> *dic = @{@"a": @1};
     
     NSLog(@"%@", arr);
@@ -43,17 +41,25 @@
 
 - (void)demo2 {
     
-    self.personArr = [[NSMutableArray alloc] init];
-    [self.personArr addObject:@1];
+    NSMutableArray<Person *> *personArr;
     
-    TLCollection *cl = [[TLCollection alloc] init];
+    personArr = [[NSMutableArray alloc] init];
+    [personArr addObject:@1];
+    
+    Person *cl = [[Person alloc] init];
     cl.name = @"Thomas";
     cl.age = [NSNumber numberWithInt:29];
-    cl.jobs = @[@"tecenct", @"alibaba", @"baidu"];
+    cl.jobs = @[@"tencent", @"alibaba", @"baidu"];
     
-    [self.personArr addObject:cl];
+    Person *c2 = [[Person alloc] init];
+    c2.name = @"Lily";
+    c2.age = [NSNumber numberWithInt:24];
+    c2.jobs = @[@"dji",@"xiaomi"];
     
-    NSLog(@"self.personArr = %@", self.personArr);
+    [personArr addObject:cl];
+    [personArr addObject:c2];
+    
+    NSLog(@"personArr = %@", personArr);
 }
 
 @end

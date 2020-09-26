@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface TLCollection : NSObject
+@interface Person : NSObject
 
 @property (strong, nonatomic) NSString *name;
 @property (assign, nonatomic) NSNumber *age;

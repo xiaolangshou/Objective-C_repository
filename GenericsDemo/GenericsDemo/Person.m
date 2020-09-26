@@ -6,8 +6,8 @@
 //  Copyright © 2020 TLLTD. All rights reserved.
 //
 
-#import "TLCollection.h"
+#import "Person.h"
 
-@implementation TLCollection
+@implementation Person
 
 @end

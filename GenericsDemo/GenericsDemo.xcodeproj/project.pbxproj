@@ -14,7 +14,7 @@
 		044DEC97251ED91E009DCED4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 044DEC96251ED91E009DCED4 /* Assets.xcassets */; };
 		044DEC9A251ED91E009DCED4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 044DEC98251ED91E009DCED4 /* LaunchScreen.storyboard */; };
 		044DEC9D251ED91E009DCED4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 044DEC9C251ED91E009DCED4 /* main.m */; };
-		044DECA7251EE09B009DCED4 /* TLCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 044DECA6251EE09B009DCED4 /* TLCollection.m */; };
+		044DECA7251EE09B009DCED4 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 044DECA6251EE09B009DCED4 /* Person.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,8 +30,8 @@
 		044DEC99251ED91E009DCED4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		044DEC9B251ED91E009DCED4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		044DEC9C251ED91E009DCED4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		044DECA5251EE09B009DCED4 /* TLCollection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLCollection.h; sourceTree = "<group>"; };
-		044DECA6251EE09B009DCED4 /* TLCollection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TLCollection.m; sourceTree = "<group>"; };
+		044DECA5251EE09B009DCED4 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		044DECA6251EE09B009DCED4 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,8 +70,8 @@
 				044DEC8E251ED91D009DCED4 /* SceneDelegate.m */,
 				044DEC90251ED91D009DCED4 /* ViewController.h */,
 				044DEC91251ED91D009DCED4 /* ViewController.m */,
-				044DECA5251EE09B009DCED4 /* TLCollection.h */,
-				044DECA6251EE09B009DCED4 /* TLCollection.m */,
+				044DECA5251EE09B009DCED4 /* Person.h */,
+				044DECA6251EE09B009DCED4 /* Person.m */,
 				044DEC93251ED91D009DCED4 /* Main.storyboard */,
 				044DEC96251ED91E009DCED4 /* Assets.xcassets */,
 				044DEC98251ED91E009DCED4 /* LaunchScreen.storyboard */,
@@ -151,7 +151,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				044DECA7251EE09B009DCED4 /* TLCollection.m in Sources */,
+				044DECA7251EE09B009DCED4 /* Person.m in Sources */,
 				044DEC92251ED91D009DCED4 /* ViewController.m in Sources */,
 				044DEC8C251ED91D009DCED4 /* AppDelegate.m in Sources */,
 				044DEC9D251ED91E009DCED4 /* main.m in Sources */,
